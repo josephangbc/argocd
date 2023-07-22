@@ -16,3 +16,5 @@ spec:
       recurse: true
   syncPolicy:
     automated: {}
+    syncOptions:
+      - CreateNamespace=true

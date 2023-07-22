@@ -23,3 +23,5 @@ spec:
     namespace: networking
   syncPolicy:
     automated: {}
+    syncOptions:
+      - CreateNamespace=true
