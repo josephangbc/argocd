@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://mojo2600.github.io
+    repoURL: https://mojo2600.github.io/pihole-kubernetes/
     targetRevision: 2.17.0
     path: pihole-kubernetes
     chart: pi-hole
