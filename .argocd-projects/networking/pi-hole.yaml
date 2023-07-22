@@ -15,7 +15,7 @@ spec:
       helm:
         releaseName: pi-hole
         valueFiles:
-          - $valuesFilesRepo/.helm/values.yaml
+          - $valuesFilesRepo/.helm/pi-hole/values.yaml
     - repoURL: https://github.com/JosephABC/argocd.git
       ref: valuesFilesRepo
   destination:
