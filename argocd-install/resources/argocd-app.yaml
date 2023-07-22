@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/JosephABC/argocd.git
     targetRevision: HEAD
-    path: argocd-install/resources
+    path: argocd-install
   syncPolicy:
     automated:
       prune: false # Specifies if resources should be pruned during auto-syncing ( false by default ).
