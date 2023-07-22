@@ -11,7 +11,7 @@ spec:
     repoURL: https://mojo2600.github.io/pihole-kubernetes/
     targetRevision: 2.17.0
     path: pihole-kubernetes
-    chart: pi-hole
+    chart: pihole
     helm:
       releaseName: pi-hole
       valueFiles:
