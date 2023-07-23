@@ -1,0 +1,9 @@
+persistentVolumeClaim:
+  enabled: true
+
+ingress:
+  enabled: true
+  ingressClassName: traefik
+
+serviceDns:
+  loadBalancerIP: "10.42.0.13"
