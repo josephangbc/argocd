@@ -4,6 +4,6 @@ metadata:
   name: l2-advertisement
   namespace: metallb-system
 ## All ipAddressPools available
-# spec:
-#   ipAddressPools:
-#   - ip-pool
+spec:
+  ipAddressPools:
+  - ip-pool
