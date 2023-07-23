@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/JosephABC/argocd.git
     targetRevision: HEAD
-    path: .kustomize/metallb/base
+    path: .kustomize/metallb
   syncPolicy:
     automated: {}
     syncOptions:
