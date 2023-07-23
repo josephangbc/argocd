@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-projects
+  namespace: argocd      
+spec:
+  project: default
+  destination:
+    namespace: networking
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/JosephABC/argocd.git
+    targetRevision: HEAD
+    path: .kustomize/metallb/base
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
