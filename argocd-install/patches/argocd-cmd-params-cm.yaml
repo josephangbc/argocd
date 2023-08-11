@@ -5,3 +5,4 @@ metadata:
 data:
   # Run server without TLS
   server.insecure: "true"
+  timeout.reconciliation: "20"
