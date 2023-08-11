@@ -4,7 +4,7 @@ metadata:
   name: argocd-server-ingress
   namespace: argocd
 spec:
-  ingressClassName: traefik
+  ingressClassName: nginx
   rules:
   - http:
       paths:
