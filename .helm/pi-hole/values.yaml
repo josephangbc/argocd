@@ -20,3 +20,5 @@ serviceDns:
 ingress:
   enabled: true
   ingressClassName: nginx
+  hosts:
+    - pi.hole
