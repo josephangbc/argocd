@@ -16,3 +16,6 @@ serviceDns:
   mixedService: true
   type: LoadBalancer
   loadBalancerIP: "192.168.18.152"
+
+ingress:
+  enabled: true
