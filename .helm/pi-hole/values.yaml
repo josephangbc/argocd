@@ -21,4 +21,4 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-    - pi.hole
+    - pihole.local
