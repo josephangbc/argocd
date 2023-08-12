@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cert-manager
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  sources:
+    - repoURL: https://charts.jetstack.io
+      targetRevision: 1.12.3
+      path: jetstack
+      chart: cert-manager
+      helm:
+        releaseName: cert-manager
+        valueFiles:
+          - $valuesFilesRepo/.helm/cert-manager/values.yaml
+    - repoURL: https://github.com/JosephABC/argocd.git
+      ref: valuesFilesRepo
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: cert-manager
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
