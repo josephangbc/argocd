@@ -10,3 +10,6 @@
 
 serviceWeb:
   type: LoadBalancer 
+
+serviceDns:
+  type: LoadBalancer
