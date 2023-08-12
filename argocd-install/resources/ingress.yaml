@@ -15,7 +15,7 @@ spec:
   tls:
   - hosts:
     - espresso-argocd.local
-    secretName: argocd-server-ingress-tls
+    secretName: argocd-secret
   rules:
   - host: espresso-argocd.local
     http:
