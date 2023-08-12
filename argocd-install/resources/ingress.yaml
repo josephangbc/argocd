@@ -6,8 +6,13 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    cert-manager.io/cluster-issuer: "letsencrypt-issuer"
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - espresso-argocd.local
+    secretName: argocd-server-ingress-tls
   rules:
   - host: espresso-argocd.local
     http:
