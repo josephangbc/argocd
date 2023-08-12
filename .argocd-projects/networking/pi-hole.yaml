@@ -9,7 +9,7 @@ spec:
   project: default
   sources:
     - repoURL: https://mojo2600.github.io/pihole-kubernetes/
-      targetRevision: 2.17.0
+      targetRevision: 2.18.0
       path: pihole-kubernetes
       chart: pihole
       helm:
