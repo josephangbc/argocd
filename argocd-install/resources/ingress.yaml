@@ -14,10 +14,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - espresso-argocd.local
+    - espresso-argocd.com
     secretName: argocd-secret
   rules:
-  - host: espresso-argocd.local
+  - host: espresso-argocd.com
     http:
       paths:
       - path: /
