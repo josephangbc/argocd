@@ -19,3 +19,4 @@ serviceDns:
 
 ingress:
   enabled: true
+  ingressClassName: nginx
