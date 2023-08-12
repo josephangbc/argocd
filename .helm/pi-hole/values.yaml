@@ -13,3 +13,4 @@ serviceWeb:
 
 serviceDns:
   type: LoadBalancer
+  loadBalancerIP: "192.168.18.152"
