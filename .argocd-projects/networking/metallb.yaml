@@ -13,6 +13,7 @@ spec:
     targetRevision: HEAD
     path: .kustomize/metallb
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
     syncOptions:
       - CreateNamespace=true
