@@ -1,9 +1,3 @@
 ingress:
   enabled: true
   ingressClassName: nginx
-
-livenessProbe:
-  enabled: false
-
-readinessProbe:
-  enabled: false
