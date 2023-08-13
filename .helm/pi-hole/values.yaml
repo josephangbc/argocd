@@ -15,6 +15,7 @@ ingress:
 
 dnsmasq:
   customDnsEntries:
-    - address=/pihole.local/192.168.18.151
+    - address=/pihole.local/192.168.18.150
     - address=/router.local/192.168.18.1
     - address=/espresso-argocd.com/192.168.18.150
+    - address=/keycloak.local/192.168.18.150
