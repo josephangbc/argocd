@@ -4,18 +4,11 @@ metadata:
   name: argocd-server-ingress
   namespace: argocd
   annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-
-    # cert-manager.io/cluster-issuer: "letsencrypt-issuer"
 spec:
   ingressClassName: nginx
-  tls:
-  - hosts:
-    - espresso-argocd.com
-    secretName: argocd-secret
   rules:
-  - host: espresso-argocd.com
+  - host: argocd.kopi.quest
     http:
       paths:
       - path: /
