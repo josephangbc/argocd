@@ -13,12 +13,12 @@ spec:
       name: letsencrypt-staging
     # Enable the HTTP-01 challenge provider
     solvers:
-      - dns01:
+      - selector:
+          dnsNames:
+          - kopi.quest
+        dns01:
           cloudflare:
             email: josephangbc@gmail.com
             apiKeySecretRef:
               name: cloudflare-apikey-secret
               key: apikey
-        selector:
-        dnsZones:
-        - 'kopi.quest'
