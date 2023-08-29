@@ -17,4 +17,4 @@ dnsmasq:
   customDnsEntries:
     - address=/pihole.local/192.168.18.150
     - address=/router.local/192.168.18.1
-    - address=/argocd.kopi.quest/192.168.18.150
+    - address=/kopi.quest/192.168.18.150
