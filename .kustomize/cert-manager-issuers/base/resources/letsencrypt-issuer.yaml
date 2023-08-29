@@ -14,7 +14,7 @@ spec:
     # Enable the HTTP-01 challenge provider
     solvers:
       - selector:
-          dnsNames:
+          dnsZones:
           - kopi.quest
         dns01:
           cloudflare:
