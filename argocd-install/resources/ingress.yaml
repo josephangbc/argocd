@@ -7,9 +7,6 @@ spec:
   tls:
     - hosts:
       - argocd.kopi.quest
-      # This assumes tls-secret exists and the SSL
-      # certificate contains a CN for foo.bar.com
-      secretName: kopi-quest-tls
   ingressClassName: nginx
   rules:
   - host: argocd.kopi.quest
