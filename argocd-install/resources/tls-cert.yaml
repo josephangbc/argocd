@@ -7,5 +7,6 @@ spec:
   secretName: kopi-quest-tls
   issuerRef:
     name: letsencrypt-issuer
+    kind: ClusterIssuer
   dnsNames:
   - '*.kopi.quest'
