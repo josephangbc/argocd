@@ -6,6 +6,7 @@ resources:
   - resources/argocd-app.yaml
   - resources/argocd-projects-app.yaml
   - resources/ingress.yaml
+  - resources/tls-cert.yaml
 
 patches:
   - path: patches/argocd-cmd-params-cm.yaml
