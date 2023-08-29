@@ -3,9 +3,13 @@ kind: Ingress
 metadata:
   name: argocd-server-ingress
   namespace: argocd
-  annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
+  tls:
+    - hosts:
+      - argocd.kopi.quest
+      # This assumes tls-secret exists and the SSL
+      # certificate contains a CN for foo.bar.com
+      secretName: kopi-quest-tls
   ingressClassName: nginx
   rules:
   - host: argocd.kopi.quest
