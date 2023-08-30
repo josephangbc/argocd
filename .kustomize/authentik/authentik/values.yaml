@@ -1,13 +1,24 @@
 authentik:
-  secret_key: $authentik-secretkey:authentik-secretkey
   postgresql:
     host: postgresql
     user: authentik
-    password: $postgresql:password
   redis:
     host: redis-master
-    password: $redis:redis-password
 
+envValueFrom:
+  AUTHENTIK_SECRET_KEY:
+    secretKeyRef:
+      key: authentik-secretkey
+      name: authentik-secretkey
+  AUTHENTIK_POSTGRESQL__PASSWORD:
+    secretKeyRef:
+      key: password
+      name: postgresql
+  AUTHENTIK_REDIS__PASSWORD:
+    secretKeyRef:
+      key: redis-password
+      name: redis
+  
 ingress:
   # Specify kubernetes ingress controller class name
   ingressClassName: nginx
