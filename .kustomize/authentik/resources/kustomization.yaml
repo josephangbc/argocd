@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - postgresql-password.yaml
   - redis-password.yaml
+  - authentik-secretkey.yaml

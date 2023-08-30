@@ -1,4 +1,5 @@
 authentik:
+  secret_key: $authentik-secretkey:authentik-secretkey
   postgresql:
     host: postgresql-0
     password: $postgresql:postgresql-password
