@@ -2,8 +2,8 @@ authentik:
   secret_key: $authentik-secretkey:authentik-secretkey
   postgresql:
     host: postgresql
-    user: postgres
-    password: $postgresql:postgresql-password
+    user: authentik
+    password: $postgresql:password
   redis:
     host: redis-master
     password: $redis:redis-password

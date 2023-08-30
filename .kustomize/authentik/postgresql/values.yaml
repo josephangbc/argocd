@@ -1,2 +1,3 @@
 auth:
   existingSecret: postgresql
+  username: authentik
