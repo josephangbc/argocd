@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - authentik
-  # - postgresql
+  - postgresql
   - redis
   - resources
 
