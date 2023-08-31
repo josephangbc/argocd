@@ -1,0 +1,4 @@
+auth:
+  database: authentik
+  username: authentik
+  existingSecret: postgresql

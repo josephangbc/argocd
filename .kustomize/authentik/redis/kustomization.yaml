@@ -5,7 +5,7 @@ helmCharts:
 - name: redis
   repo: https://charts.bitnami.com/bitnami
   version: 18.0.1
-  releaseName: redis
+  releaseName: authentik-redis
   namespace: authentik
   valuesFile: values.yaml
 

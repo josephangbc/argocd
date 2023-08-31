@@ -1,10 +1,3 @@
-authentik:
-  postgresql:
-    host: postgresql
-    user: postgres
-  redis:
-    host: redis-master
-
 envValueFrom:
   AUTHENTIK_SECRET_KEY:
     secretKeyRef:
@@ -12,7 +5,7 @@ envValueFrom:
       name: authentik-secretkey
   AUTHENTIK_POSTGRESQL__PASSWORD:
     secretKeyRef:
-      key: postgres-password
+      key: password
       name: postgresql
   AUTHENTIK_REDIS__PASSWORD:
     secretKeyRef:
