@@ -11,7 +11,7 @@ data:
   dex.config: |
     connectors:
     - config:
-        issuer: http://authentik.kopi.quest/application/o/argocd/
+        issuer: https://authentik.kopi.quest/application/o/argocd/
         clientID: WkuZi6KqJzYEHcKbnGbmEZtUstdMFpITyRUJeLC7
         clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true
