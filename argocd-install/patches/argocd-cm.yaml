@@ -13,7 +13,7 @@ data:
     - config:
         issuer: http://authentik.kopi.quest/application/o/argocd/
         clientID: 1yjRQGsV536EA9HvNZTbnrrumawZH4gpTZWp2mOJ
-        clientSecret: $argocd-secret:dex.authentik.clientSecret
+        clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true
         scopes:
           - openid
