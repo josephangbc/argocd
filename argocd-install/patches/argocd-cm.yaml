@@ -15,6 +15,7 @@ data:
         clientID: WkuZi6KqJzYEHcKbnGbmEZtUstdMFpITyRUJeLC7
         clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true
+        redirectURI: http://127.0.0.1:5556/callback
         scopes:
           - openid
           - profile
