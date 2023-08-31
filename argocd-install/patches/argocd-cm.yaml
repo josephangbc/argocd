@@ -20,6 +20,7 @@ data:
           - profile
           - email
           - groups
+        getUserInfo: true
       name: authentik
       type: oidc
       id: authentik
