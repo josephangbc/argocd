@@ -8,6 +8,7 @@ data:
       generate:
         command: [ "sh", "-c" ]
         args: [ "kustomize build --enable-helm" ]
+  url: "https://argocd.kopi.quest"
   dex.config: |
     connectors:
     - config:
@@ -15,11 +16,11 @@ data:
         clientID: WkuZi6KqJzYEHcKbnGbmEZtUstdMFpITyRUJeLC7
         clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true
-        redirectURI: http://127.0.0.1:5556/callback
         scopes:
           - openid
           - profile
           - email
+          - groups
       name: authentik
       type: oidc
       id: authentik
