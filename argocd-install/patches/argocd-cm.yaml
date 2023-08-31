@@ -8,3 +8,17 @@ data:
       generate:
         command: [ "sh", "-c" ]
         args: [ "kustomize build --enable-helm" ]
+  dex.config: |
+    connectors:
+    - config:
+        issuer: http://authentik.kopi.quest/application/o/argocd/
+        clientID: <client ID from the Provider above>
+        clientSecret: $dex.authentik.clientSecret
+        insecureEnableGroups: true
+        scopes:
+          - openid
+          - profile
+          - email
+      name: authentik
+      type: oidc
+      id: authentik
