@@ -8,7 +8,6 @@ data:
       generate:
         command: [ "sh", "-c" ]
         args: [ "kustomize build --enable-helm" ]
-  url: "https://argocd.kopi.quest"
   dex.config: |
     connectors:
     - config:
