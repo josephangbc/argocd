@@ -6,3 +6,4 @@ data:
   # Run server without TLS
   server.insecure: "true"
   timeout.reconciliation: "20"
+  dexserver.disable.tls: "true"
