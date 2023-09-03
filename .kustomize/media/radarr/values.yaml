@@ -30,4 +30,3 @@ volumeMounts:
   - name: media-volume
     mountPath: "/movies"
     subPath: "library/movies" # Path /mnt/ssd/media/library/tv where sonarr moves and renames the episodes
-

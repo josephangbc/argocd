@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+- name: transmission-openvpn  
+  repo: https://bananaspliff.github.io/geek-charts
+  releaseName: transmission-openvpn 
+  namespace: media
+  valuesFile: values.yaml
