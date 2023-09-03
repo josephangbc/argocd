@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: linuxserver/sonarr
-  tag: arm32v7-latest # ARM image
+  repository: ghcr.io/linuxserver/sonarr
+  tag: latest
   pullPolicy: IfNotPresent
 
 env:
