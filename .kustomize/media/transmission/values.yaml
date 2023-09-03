@@ -52,7 +52,6 @@ volumeMounts:
     subPath: "downloads/transmission" # Path /mnt/ssd/media/downloads/transmission where transmission downloads Torrents
   - name: "dev-tun"
     mountPath: "/dev/net/tun" # Needed for VPN
-  - 
 
 securityContext:
   capabilities: # Needed for VPN
