@@ -13,7 +13,8 @@ spec:
   hostPath:
     path: "/mnt/extstorage/media"
   nodeAffinity:
-    nodeSelectorTerms:
+    required:
+      nodeSelectorTerms:
       - matchExpressions:
         - key: kubernetes.io/hostname
           operator: In
