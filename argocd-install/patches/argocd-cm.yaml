@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
+  url: https://argocd.kopi.quest
   configManagementPlugins: |
     - name: kustomize-enable-helm
       generate:
@@ -20,7 +21,6 @@ data:
           - profile
           - email
           - groups
-        getUserInfo: true
       name: authentik
       type: oidc
       id: authentik
