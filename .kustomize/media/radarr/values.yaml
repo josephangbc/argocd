@@ -1,0 +1,33 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/linuxserver/radarr
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env:
+  - name: PUID
+    value: "1000"
+  - name: PGID
+    value: "1000"
+
+service:
+  type: ClusterIP
+  port: 80
+
+volumes:
+  - name: media-volume
+    persistentVolumeClaim:
+      claimName: "media-volume" # PersistentVolumeClaim created earlier
+
+volumeMounts:
+  - name: media-volume
+    mountPath: "/config"
+    subPath: "configs/radarr" # Path /mnt/ssd/media/configs/sonarr where sonarr writes the configuration
+  - name: media-volume
+    mountPath: "/downloads/transmission"
+    subPath: "downloads/transmission" # Path /mnt/ssd/media/downloads/transmission where sonarr picks up downloaded episodes
+  - name: media-volume
+    mountPath: "/movies"
+    subPath: "library/movies" # Path /mnt/ssd/media/library/tv where sonarr moves and renames the episodes
+
