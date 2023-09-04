@@ -3,13 +3,13 @@ metrics:
     enabled: false
 
 image:
-  repository: linuxserver/prowlarr
-  tag: 1.8.6-nightly
-  pullPolicy: IfNotPresent
-exportarrImage:
-  repository: tccr.io/truecharts/exportarr
-  pullPolicy: IfNotPresent
+  repository: lscr.io/linuxserver/prowlarr
   tag: latest
+  pullPolicy: IfNotPresent
+# exportarrImage:
+#   repository: tccr.io/truecharts/exportarr
+#   pullPolicy: IfNotPresent
+#   tag: latest
 
 persistence:
   config:
