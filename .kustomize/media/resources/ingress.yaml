@@ -23,11 +23,11 @@ spec:
             name: sonarr
             port:
               number: 80
-      - path: "/jackett"
+      - path: "/prowlarr"
         pathType: Prefix
         backend:
           service:
-            name: jackett
+            name: prowlarr
             port:
               number: 80
       - path: "/radarr"
