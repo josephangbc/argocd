@@ -30,6 +30,8 @@ env:
     value: "1000"
   - name: PGID
     value: "1000"
+  - name: CREATE_TUN_DEVICE
+    value: "false"
 
 service:
   type: ClusterIP
