@@ -17,28 +17,28 @@ spec:
         #   value: "0000"
         # - name: S6_READ_ONLY_ROOT
         #   value: "0"
-        volumeMounts:
-        - mountPath: /dev/shm
-          name: media-volume
-          subPath: "configs/prowlarr/dev/shm"
-          readOnly: false
-        - mountPath: /shared
-          name: media-volume
-          subPath: "configs/prowlarr/shared"
-          readOnly: false
-        - mountPath: /tmp
-          name: media-volume
-          subPath: "configs/prowlarr/tmp"
-          readOnly: false
-        - mountPath: /var/logs
-          name: media-volume
-          subPath: "configs/prowlarr/var/logs"
-          readOnly: false
-        - mountPath: /var/run
-          name: media-volume
-          subPath: "configs/prowlarr/var/run"
-          readOnly: false
-      volumes:
-      - name: media-volume
-        persistentVolumeClaim:
-          claimName: "media-volume" # PersistentVolumeClaim created earlier
+      #   volumeMounts:
+      #   - mountPath: /dev/shm
+      #     name: media-volume
+      #     subPath: "configs/prowlarr/dev/shm"
+      #     readOnly: false
+      #   - mountPath: /shared
+      #     name: media-volume
+      #     subPath: "configs/prowlarr/shared"
+      #     readOnly: false
+      #   - mountPath: /tmp
+      #     name: media-volume
+      #     subPath: "configs/prowlarr/tmp"
+      #     readOnly: false
+      #   - mountPath: /var/logs
+      #     name: media-volume
+      #     subPath: "configs/prowlarr/var/logs"
+      #     readOnly: false
+      #   - mountPath: /var/run
+      #     name: media-volume
+      #     subPath: "configs/prowlarr/var/run"
+      #     readOnly: false
+      # volumes:
+      # - name: media-volume
+      #   persistentVolumeClaim:
+      #     claimName: "media-volume" # PersistentVolumeClaim created earlier
