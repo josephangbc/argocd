@@ -8,3 +8,8 @@ helmCharts:
   releaseName: prowlarr 
   namespace: media
   valuesFile: values.yaml
+
+patches:
+  - path: patches/deployment.yaml
+#   - path: patches/argocd-cm.yaml
+#   - path: patches/argocd-rbac-cm.yaml

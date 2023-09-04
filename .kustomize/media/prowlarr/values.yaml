@@ -10,3 +10,7 @@ exportarrImage:
   repository: tccr.io/truecharts/exportarr
   pullPolicy: IfNotPresent
   tag: latest
+
+persistence:
+  config:
+    enabled: false
