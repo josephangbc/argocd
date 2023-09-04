@@ -8,6 +8,15 @@ spec:
     spec:
       containers:
       - name: prowlarr
+        env:
+        - name: TZ
+          value: UTC
+        - name: UMASK
+          value: "0000"
+        - name: UMASK_SET
+          value: "0000"
+        - name: S6_READ_ONLY_ROOT
+          value: "0"
         volumeMounts:
         - mountPath: /dev/shm
           name: media-volume
