@@ -11,34 +11,17 @@ spec:
         env:
         - name: TZ
           value: UTC
-        # - name: UMASK
-        #   value: "0000"
-        # - name: UMASK_SET
-        #   value: "0000"
-        # - name: S6_READ_ONLY_ROOT
-        #   value: "0"
-      #   volumeMounts:
-      #   - mountPath: /dev/shm
-      #     name: media-volume
-      #     subPath: "configs/prowlarr/dev/shm"
-      #     readOnly: false
-      #   - mountPath: /shared
-      #     name: media-volume
-      #     subPath: "configs/prowlarr/shared"
-      #     readOnly: false
-      #   - mountPath: /tmp
-      #     name: media-volume
-      #     subPath: "configs/prowlarr/tmp"
-      #     readOnly: false
-      #   - mountPath: /var/logs
-      #     name: media-volume
-      #     subPath: "configs/prowlarr/var/logs"
-      #     readOnly: false
-      #   - mountPath: /var/run
-      #     name: media-volume
-      #     subPath: "configs/prowlarr/var/run"
-      #     readOnly: false
-      # volumes:
-      # - name: media-volume
-      #   persistentVolumeClaim:
-      #     claimName: "media-volume" # PersistentVolumeClaim created earlier
+        - name: PUID
+          value: 1000
+        - name: PGID
+          value: 1000
+        - name: UMASK
+          value: 002
+        volumeMounts:
+        - name: media-volume
+          mountPath: /config
+          subPath: configs/prowlarr
+      volumes:
+      - name: media-volume
+        persistentVolumeClaim:
+          claimName: "media-volume" # PersistentVolumeClaim created earlier
