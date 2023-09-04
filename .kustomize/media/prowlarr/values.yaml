@@ -3,7 +3,7 @@ metrics:
     enabled: false
 
 image:
-  repository: lscr.io/linuxserver/prowlarr
+  repository: hotio/prowlarr
   tag: latest
   pullPolicy: IfNotPresent
 # exportarrImage:
