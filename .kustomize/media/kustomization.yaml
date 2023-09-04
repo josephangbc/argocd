@@ -6,5 +6,6 @@ resources:
   - sonarr
   - radarr
   - transmission
+  - jackett
 
 namespace: media
