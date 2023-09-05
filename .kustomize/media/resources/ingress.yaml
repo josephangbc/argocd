@@ -13,9 +13,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: transmission-openvpn
+            name: transmission
             port:
-              number: 80
+              number: 10109
       - path: "/sonarr"
         pathType: Prefix
         backend:
