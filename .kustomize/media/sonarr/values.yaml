@@ -27,7 +27,7 @@ volumeMounts:
     mountPath: "/config"
     subPath: "configs/sonarr" # Path /mnt/ssd/media/configs/sonarr where sonarr writes the configuration
   - name: media-volume
-    mountPath: "/downloads/transmission"
+    mountPath: "/downloads"
     subPath: "downloads/transmission" # Path /mnt/ssd/media/downloads/transmission where sonarr picks up downloaded episodes
   - name: media-volume
     mountPath: "/tv"
