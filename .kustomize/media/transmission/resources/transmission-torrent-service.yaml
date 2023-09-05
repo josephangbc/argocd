@@ -8,13 +8,13 @@ metadata:
 spec:
   ports:
   - name: torrent
-    port: 51414
+    port: 51413
     protocol: TCP
-    targetPort: 51414
+    targetPort: 51413
   - name: torrentudp
-    port: 51414
+    port: 51413
     protocol: UDP
-    targetPort: 51414
+    targetPort: 51413
   selector:
     app.kubernetes.io/instance: transmission
     app.kubernetes.io/name: transmission

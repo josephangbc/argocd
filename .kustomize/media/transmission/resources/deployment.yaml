@@ -20,19 +20,11 @@ spec:
       containers:
       - env:
         - name: TZ
-          value: UTC
-        - name: UMASK
-          value: "0022"
-        - name: UMASK_SET
-          value: "0022"
-        - name: S6_READ_ONLY_ROOT
-          value: "1"
-        - name: TRANSMISSION__PEER_PORT
-          value: "51414"
-        - name: TRANSMISSION__RPC_PORT
-          value: "10109"
-        - name: TRANSMISSION__RPC_URL
-          value: /transmission
+          value: Etc/UTC
+        - name: PUID
+          value: 1000
+        - name: PGID
+          value: 1000
         image: linuxserver/transmission:latest
         imagePullPolicy: IfNotPresent
         livenessProbe:
@@ -41,17 +33,17 @@ spec:
           periodSeconds: 10
           successThreshold: 1
           tcpSocket:
-            port: 10109
+            port: 9091
           timeoutSeconds: 5
         name: transmission
         ports:
-        - containerPort: 10109
+        - containerPort: 9091
           name: main
           protocol: TCP
-        - containerPort: 51414
+        - containerPort: 51413
           name: torrent
           protocol: TCP
-        - containerPort: 51414
+        - containerPort: 51413
           name: torrentudp
           protocol: UDP
         readinessProbe:
@@ -60,7 +52,7 @@ spec:
           periodSeconds: 10
           successThreshold: 2
           tcpSocket:
-            port: 10109
+            port: 9091
           timeoutSeconds: 5
         resources:
           limits:
@@ -75,7 +67,7 @@ spec:
           periodSeconds: 5
           successThreshold: 1
           tcpSocket:
-            port: 10109
+            port: 9091
           timeoutSeconds: 2
         stdin: false
         tty: false

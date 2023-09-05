@@ -8,9 +8,9 @@ metadata:
 spec:
   ports:
   - name: main
-    port: 10109
+    port: 9091
     protocol: TCP
-    targetPort: 10109
+    targetPort: 9091
   selector:
     app.kubernetes.io/instance: transmission
     app.kubernetes.io/name: transmission
