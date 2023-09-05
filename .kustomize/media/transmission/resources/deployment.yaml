@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/instance: transmission
+    app.kubernetes.io/name: transmission
+  name: transmission
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: transmission
+      app.kubernetes.io/name: transmission
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/instance: transmission
+        app.kubernetes.io/name: transmission
+    spec:
+      containers:
+      - env:
+        - name: TZ
+          value: UTC
+        - name: UMASK
+          value: "0022"
+        - name: UMASK_SET
+          value: "0022"
+        - name: S6_READ_ONLY_ROOT
+          value: "1"
+        - name: TRANSMISSION__PEER_PORT
+          value: "51414"
+        - name: TRANSMISSION__RPC_PORT
+          value: "10109"
+        - name: TRANSMISSION__RPC_URL
+          value: /transmission
+        image: linuxserver/transmission:latest
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          failureThreshold: 5
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          tcpSocket:
+            port: 10109
+          timeoutSeconds: 5
+        name: transmission
+        ports:
+        - containerPort: 10109
+          name: main
+          protocol: TCP
+        - containerPort: 51414
+          name: torrent
+          protocol: TCP
+        - containerPort: 51414
+          name: torrentudp
+          protocol: UDP
+        readinessProbe:
+          failureThreshold: 5
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 2
+          tcpSocket:
+            port: 10109
+          timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: 4000m
+            memory: 8Gi
+          requests:
+            cpu: 10m
+            memory: 50Mi
+        startupProbe:
+          failureThreshold: 60
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          successThreshold: 1
+          tcpSocket:
+            port: 10109
+          timeoutSeconds: 2
+        stdin: false
+        tty: false
+        volumeMounts:
+        - mountPath: /config
+          name: media-volume
+          subPath: configs/transmission
+        - mountPath: /downloads  
+          name: media-volume
+          subPath: downloads/transmission
+        - mountPath: /watch
+          name: media-volume
+          subPath: downloads/watch
+      volumes:
+      - name: media-volume
+        persistentVolumeClaim:
+          claimName: media-volume

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: transmission
+    app.kubernetes.io/name: transmission
+  name: transmission-torrent
+spec:
+  ports:
+  - name: torrent
+    port: 51414
+    protocol: TCP
+    targetPort: 51414
+  - name: torrentudp
+    port: 51414
+    protocol: UDP
+    targetPort: 51414
+  selector:
+    app.kubernetes.io/instance: transmission
+    app.kubernetes.io/name: transmission
+  type: ClusterIP
