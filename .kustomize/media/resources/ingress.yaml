@@ -41,6 +41,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: plex-kube-plex
+            name: jellyfin
             port:
-              number: 32400
+              number: 8096
