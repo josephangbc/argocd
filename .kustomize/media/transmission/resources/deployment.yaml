@@ -20,7 +20,7 @@ spec:
       containers:
       - env:
         - name: TZ
-          value: Etc/UTC
+          value: Asia/Singapore
         - name: PUID
           value: "1000"
         - name: PGID
