@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: authentik-outpost
 spec:
+  ingressClassName: nginx
   rules:
   - host: media.kopi.quest
     http:
@@ -14,4 +15,3 @@ spec:
             name: authentik
             port:
               number: 9443
-              
