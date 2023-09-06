@@ -5,7 +5,27 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: media.kopi.quest
+  - host: prowlarr.kopi.quest
+    http:
+      paths:
+      - path: "/outpost.goauthentik.io"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80
+  - host: sonarr.kopi.quest
+    http:
+      paths:
+      - path: "/outpost.goauthentik.io"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80
+  - host: radarr.kopi.quest
     http:
       paths:
       - path: "/outpost.goauthentik.io"
