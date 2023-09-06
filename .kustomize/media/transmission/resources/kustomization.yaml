@@ -5,3 +5,4 @@ resources:
   - deployment.yaml
   - transmission-service.yaml
   - transmission-torrent-service.yaml
+  - ingress.yaml

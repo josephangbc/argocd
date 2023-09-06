@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: media
-  name: media-ingress
+  name: arr-ingress
   annotations:
       # This should be the in-cluster DNS name for the authentik outpost service
       # as when the external URL is specified here, nginx will overwrite some crucial headers
