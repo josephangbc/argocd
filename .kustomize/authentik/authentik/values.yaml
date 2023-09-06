@@ -22,6 +22,3 @@ ingress:
       paths:
         - path: "/"
           pathType: Prefix
-
-authentik:
-  log_level: debug
