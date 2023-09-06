@@ -6,4 +6,3 @@ resources:
   - pvc.yaml
   - ingress.yaml
   - openvpn-secret.yaml
-  - outpost-ingress.yaml

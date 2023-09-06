@@ -10,6 +10,6 @@ spec:
               pathType: Prefix
               backend:
                   service:
-                      name: authentik.authentik
+                      name: authentik
                       port:
                           number: 9443
