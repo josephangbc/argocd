@@ -49,10 +49,3 @@ spec:
             name: radarr
             port:
               number: 80
-      - path: "/"
-        pathType: Prefix
-        backend:
-          service:
-            name: jellyfin
-            port:
-              number: 8096
