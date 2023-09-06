@@ -1,15 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-    name: authentik-outpost
+  name: authentik-outpost
 spec:
-    rules:
-        - host: media.kopi.quest
-          http:
-              paths: /outpost.goauthentik.io
-              pathType: Prefix
-              backend:
-                  service:
-                      name: authentik
-                      port:
-                          number: 9443
+  rules:
+  - host: media.kopi.quest
+    http:
+      paths:
+      - path: "/outpost.goauthentik.io"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 9443
+              
