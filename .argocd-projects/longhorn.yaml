@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: longhorn
+    namespace: longhorn-system
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/JosephABC/argocd.git
