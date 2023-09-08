@@ -6,4 +6,7 @@ resources:
   - resources
   - nodes
 
+patches:
+  - path: patches/longhorn-default-setting.yaml
+
 namespace: longhorn-system
