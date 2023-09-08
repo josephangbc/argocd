@@ -6,9 +6,10 @@ metadata:
 spec:
   allowScheduling: true
   disks:
-    allowScheduling: true
-    evictionRequested: false
-    path: /mnt/extstorage
-    storageReserved: 0
-    tags: []
-    diskType: block
+    espresso-1-storage:
+      allowScheduling: true
+      evictionRequested: false
+      path: /mnt/extstorage
+      storageReserved: 0
+      tags: []
+      diskType: block
