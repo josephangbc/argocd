@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: longhorn-default-setting
+  namespace: longhorn-system
 data:
   default-setting.yaml: |-
     create-default-disk-labeled-nodes: true
