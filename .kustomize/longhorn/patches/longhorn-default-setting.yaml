@@ -9,3 +9,4 @@ metadata:
 data:
   default-setting.yaml: |-
     create-default-disk-labeled-nodes: true
+    default-replica-count: 1
