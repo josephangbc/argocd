@@ -3,5 +3,6 @@ kind: Kustomization
 
 resources:
   - ingress.yaml
+  - longhorn-default-setting.yaml
 
 namespace: longhorn-system
