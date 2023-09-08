@@ -4234,7 +4234,9 @@ subjects:
 ---
 apiVersion: v1
 data:
-  default-setting.yaml: 'create-default-disk-labeled-nodes: true'
+  default-setting.yaml: |-
+    create-default-disk-labeled-nodes: true
+    default-replica-count: 1
 kind: ConfigMap
 metadata:
   labels:
@@ -4651,6 +4653,7 @@ metadata:
   name: espresso-1
   namespace: longhorn-system
 spec:
+  allowScheduling: true
   disks:
     espresso-1-storage:
       allowScheduling: true

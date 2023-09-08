@@ -8,5 +8,6 @@ resources:
 
 patches:
   - path: patches/longhorn-default-setting.yaml
+  - path: patches/longhorn-storageclass.yaml
 
 namespace: longhorn-system
