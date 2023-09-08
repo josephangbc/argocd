@@ -1,7 +1,7 @@
 apiVersion: longhorn.io/v1beta2
 kind: Node
 metadata:
-  name: espresso-1
+  name: espresso-0
   namespace: longhorn-system
 spec:
   allowScheduling: false
