@@ -15,7 +15,7 @@ data:
       numberOfReplicas: "1"
       staleReplicaTimeout: "30"
       fromBackup: ""
-      fsType: "ext4"
+      fsType: "xfs"
       dataLocality: "disabled"
 kind: ConfigMap
 metadata:
