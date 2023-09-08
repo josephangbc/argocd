@@ -4,7 +4,7 @@ metadata:
   name: espresso-1
   namespace: longhorn-system
 spec:
-  allowScheduling: true
+  allowScheduling: false
   disks:
     espresso-1-storage:
       allowScheduling: true
