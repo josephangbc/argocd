@@ -1,0 +1,14 @@
+apiVersion: longhorn.io/v1beta2
+kind: Node
+metadata:
+  name: espresso-1
+  namespace: longhorn-system
+spec:
+  allowScheduling: true
+  disks:
+    allowScheduling: true
+    evictionRequested: false
+    path: /mnt/extstorage
+    storageReserved: 0
+    tags: []
+    diskType: block
