@@ -6,10 +6,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: media.kopi.quest
+  - host: transmission.kopi.quest
     http:
       paths:
-      - path: "/transmission"
+      - path: "/"
         pathType: Prefix
         backend:
           service:

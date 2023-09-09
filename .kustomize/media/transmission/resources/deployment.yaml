@@ -73,15 +73,18 @@ spec:
         tty: false
         volumeMounts:
         - mountPath: /config
-          name: media-volume
+          name: config
           subPath: configs/transmission
-        - mountPath: /downloads  
-          name: media-volume
+        - mountPath: /downloads
+          name: data
           subPath: downloads/transmission
         - mountPath: /watch
-          name: media-volume
+          name: data
           subPath: downloads/watch
       volumes:
-      - name: media-volume
+      - name: config
         persistentVolumeClaim:
-          claimName: media-volume
+          claimName: media-config
+      - name: data
+        persistentVolumeClaim:
+          claimName: media-data

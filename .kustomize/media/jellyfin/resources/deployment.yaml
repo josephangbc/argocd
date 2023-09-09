@@ -72,15 +72,18 @@ spec:
           timeoutSeconds: 2
         volumeMounts:
         - mountPath: /config
-          name: media-volume
+          name: config
           subPath: configs/jellyfin
-        - name: media-volume
-          mountPath: "/tv"
-          subPath: "library/tv"
-        - name: media-volume
-          mountPath: "/movies"
-          subPath: "library/movies"
+        - name: data
+          mountPath: /tv
+          subPath: library/tv
+        - name: data
+          mountPath: /movies
+          subPath: library/movies
       volumes:
-      - name: media-volume
+      - name: config
         persistentVolumeClaim:
-          claimName: media-volume
+          claimName: media-config
+      - name: data
+        persistentVolumeClaim:
+          claimName: media-data

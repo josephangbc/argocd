@@ -72,9 +72,9 @@ spec:
           timeoutSeconds: 2
         volumeMounts:
         - mountPath: /config
-          name: media-volume
+          name: config
           subPath: configs/prowlarr
       volumes:
-      - name: media-volume
+      - name: config
         persistentVolumeClaim:
-          claimName: media-volume
+          claimName: media-config

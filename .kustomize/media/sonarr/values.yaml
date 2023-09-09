@@ -18,18 +18,21 @@ service:
   port: 80
 
 volumes:
-  - name: media-volume
+  - name: config
     persistentVolumeClaim:
-      claimName: "media-volume" # PersistentVolumeClaim created earlier
+      claimName: media-config
+  - name: data
+    persistentVolumeClaim:
+      claimName: media-data
 
 volumeMounts:
-  - name: media-volume
-    mountPath: "/config"
-    subPath: "configs/sonarr" # Path /mnt/ssd/media/configs/sonarr where sonarr writes the configuration
-  - name: media-volume
-    mountPath: "/downloads"
-    subPath: "downloads/transmission" # Path /mnt/ssd/media/downloads/transmission where sonarr picks up downloaded episodes
-  - name: media-volume
-    mountPath: "/tv"
-    subPath: "library/tv" # Path /mnt/ssd/media/library/tv where sonarr moves and renames the episodes
+  - name: config
+    mountPath: /config
+    subPath: configs/sonarr
+  - name: data
+    mountPath: /downloads
+    subPath: "downloads/transmission" # Path where sonarr picks up downloaded episodes
+  - name: data
+    mountPath: /movies
+    subPath: library/tv # Path where sonarr moves and renames the episodes
 
