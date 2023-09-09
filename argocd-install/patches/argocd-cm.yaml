@@ -14,6 +14,7 @@ data:
     - config:
         issuer: https://authentik.kopi.quest/application/o/argocd/
         # redirectURI: https://argocd.kopi.quest/api/dex/callback
+        redirectURI: https://authentik.kopi.quest/callback
         clientID: WkuZi6KqJzYEHcKbnGbmEZtUstdMFpITyRUJeLC7
         clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true
