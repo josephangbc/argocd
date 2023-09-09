@@ -5,4 +5,4 @@ resources:
   - postgresql-secrets.yaml
   - redis-password.yaml
   - authentik-secretkey.yaml
-  - outpost-ingress.yaml
+  # - outpost-ingress.yaml
