@@ -4,9 +4,10 @@ metadata:
   namespace: media
   name: media-config
 spec:
-  storageClassName: longhorn
+  storageClassName: ""
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: "20Gi"
+  volumeName: media-config
