@@ -6,3 +6,6 @@ auth:
 primary:
   persistence:
     existingClaim: postgresql
+
+volumePermissions:
+  enabled: true
