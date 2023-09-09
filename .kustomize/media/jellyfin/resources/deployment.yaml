@@ -73,7 +73,7 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
-          subPath: configs/jellyfin
+          subPath: jellyfin
         - name: data
           mountPath: /tv
           subPath: library/tv

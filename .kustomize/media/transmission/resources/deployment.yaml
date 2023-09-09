@@ -74,7 +74,7 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
-          subPath: configs/transmission
+          subPath: transmission
         - mountPath: /downloads
           name: data
           subPath: downloads/transmission

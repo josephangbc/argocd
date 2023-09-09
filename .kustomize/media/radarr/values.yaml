@@ -28,7 +28,7 @@ volumes:
 volumeMounts:
   - name: config
     mountPath: /config
-    subPath: configs/radarr
+    subPath: radarr
   - name: data
     mountPath: /downloads
     subPath: "downloads/transmission" # Path where sonarr picks up downloaded movies
