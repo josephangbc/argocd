@@ -33,6 +33,6 @@ volumeMounts:
     mountPath: /downloads
     subPath: "downloads/transmission" # Path where sonarr picks up downloaded episodes
   - name: data
-    mountPath: /movies
+    mountPath: /tv
     subPath: library/tv # Path where sonarr moves and renames the episodes
 
