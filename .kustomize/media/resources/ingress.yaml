@@ -13,9 +13,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: prowlarr
+            name: authentik
             port:
-              number: 9696
+              number: 80
   - host: radarr.kopi.quest
     http:
       paths:
@@ -23,7 +23,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: radarr
+            name: authentik
             port:
               number: 80
   - host: sonarr.kopi.quest
@@ -33,6 +33,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: sonarr
+            name: authentik
             port:
               number: 80
