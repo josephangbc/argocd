@@ -1,0 +1,38 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: authentik
+  name: arr-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: prowlarr.kopi.quest
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80
+  - host: radarr.kopi.quest
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80
+  - host: sonarr.kopi.quest
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80

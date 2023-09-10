@@ -7,3 +7,4 @@ resources:
   - postgresql-pvc.yaml
   - redis-password.yaml
   - authentik-secretkey.yaml
+  - arr-ingress.yaml
