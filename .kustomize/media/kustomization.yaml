@@ -8,5 +8,6 @@ resources:
   - transmission
   - prowlarr
   - jellyfin
+  - lidarr
 
 namespace: media
