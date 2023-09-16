@@ -80,6 +80,9 @@ spec:
         - name: data
           mountPath: /movies
           subPath: library/movies
+        - name: data
+          mountPath: /music
+          subPath: library/music
       volumes:
       - name: config
         persistentVolumeClaim:
