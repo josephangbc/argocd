@@ -36,3 +36,13 @@ spec:
             name: authentik
             port:
               number: 80
+  - host: lidarr.kopi.quest
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: authentik
+            port:
+              number: 80
