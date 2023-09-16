@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://json.schemastore.org/yamllint.json": "file:///mnt/c/Coding/HomeCluster/argocd/.argocd-projects/networking/traefik.yaml"
-    }
-}
