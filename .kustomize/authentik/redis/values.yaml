@@ -1,3 +1,6 @@
 auth:
   existingSecret: redis
   existingSecretPasswordKey: redis-password
+
+replica:
+  replicaCount: 0
