@@ -4,8 +4,6 @@ metadata:
   labels:
     app.kubernetes.io/instance: jellyfin
     app.kubernetes.io/name: jellyfin
-  annotations:
-    tailscale.com/expose: "true"
   name: jellyfin
   namespace: media
 spec:
