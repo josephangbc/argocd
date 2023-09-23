@@ -68,19 +68,7 @@ spec:
         - mountPath: /app/config
           name: config
           subPath: jellyseerr
-        - name: data
-          mountPath: /tv
-          subPath: library/tv
-        - name: data
-          mountPath: /movies
-          subPath: library/movies
-        - name: data
-          mountPath: /music
-          subPath: library/music
       volumes:
       - name: config
         persistentVolumeClaim:
           claimName: media-config
-      - name: data
-        persistentVolumeClaim:
-          claimName: media-data
