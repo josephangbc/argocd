@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: media.kopi.quest
+  - host: jellyseerr.kopi.quest
     http:
       paths:
       - path: "/"
