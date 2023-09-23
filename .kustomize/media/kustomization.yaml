@@ -9,5 +9,6 @@ resources:
   - prowlarr
   - jellyfin
   - lidarr
+  - jellyseerr
 
 namespace: media
