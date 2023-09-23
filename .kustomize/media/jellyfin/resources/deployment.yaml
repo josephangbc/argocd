@@ -30,31 +30,31 @@ spec:
           value: "002"
         image: hotio/jellyfin:latest
         imagePullPolicy: IfNotPresent
-        livenessProbe:
-          failureThreshold: 5
-          httpGet:
-            path: /
-            port: 8096
-            scheme: HTTP
-          initialDelaySeconds: 10
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 5
+        # livenessProbe:
+        #   failureThreshold: 5
+        #   httpGet:
+        #     path: /
+        #     port: 8096
+        #     scheme: HTTP
+        #   initialDelaySeconds: 10
+        #   periodSeconds: 10
+        #   successThreshold: 1
+        #   timeoutSeconds: 5
         name: jellyfin
         ports:
         - containerPort: 8096
           name: main
           protocol: TCP
-        readinessProbe:
-          failureThreshold: 5
-          httpGet:
-            path: /
-            port: 8096
-            scheme: HTTP
-          initialDelaySeconds: 10
-          periodSeconds: 10
-          successThreshold: 2
-          timeoutSeconds: 5
+        # readinessProbe:
+        #   failureThreshold: 5
+        #   httpGet:
+        #     path: /
+        #     port: 8096
+        #     scheme: HTTP
+        #   initialDelaySeconds: 10
+        #   periodSeconds: 10
+        #   successThreshold: 2
+        #   timeoutSeconds: 5
         resources:
           limits:
             cpu: 4000m
@@ -62,14 +62,14 @@ spec:
           requests:
             cpu: 10m
             memory: 50Mi
-        startupProbe:
-          failureThreshold: 60
-          initialDelaySeconds: 10
-          periodSeconds: 5
-          successThreshold: 1
-          tcpSocket:
-            port: 8096
-          timeoutSeconds: 2
+        # startupProbe:
+        #   failureThreshold: 60
+        #   initialDelaySeconds: 10
+        #   periodSeconds: 5
+        #   successThreshold: 1
+        #   tcpSocket:
+        #     port: 8096
+        #   timeoutSeconds: 2
         volumeMounts:
         - mountPath: /config
           name: config
