@@ -65,7 +65,7 @@ spec:
             port: 5055
           timeoutSeconds: 2
         volumeMounts:
-        - mountPath: /config
+        - mountPath: /app/config
           name: config
           subPath: jellyseerr
       volumes:
