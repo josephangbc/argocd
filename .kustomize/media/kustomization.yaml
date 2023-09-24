@@ -8,7 +8,7 @@ resources:
   - transmission
   - prowlarr
   - jellyfin
-  - lidarr
   - jellyseerr
+  - yt-dlp
 
 namespace: media

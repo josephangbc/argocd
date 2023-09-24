@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/instance: yt-dlp
+    app.kubernetes.io/name: yt-dlp
+  name: yt-dlp
+  namespace: media
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: yt-dlp
+      app.kubernetes.io/name: yt-dlp
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/instance: yt-dlp
+        app.kubernetes.io/name: yt-dlp
+    spec:
+      containers:
+      - env:
+        - name: TZ
+          value: Asia/Singapore
+        image: fallenbagel/jellyseerr:latest
+        imagePullPolicy: IfNotPresent
+        command:
+        - ""
+        args:
+        - sleep 10000
+        name: yt-dlp
+        # ports:
+        # - containerPort: 5055
+        #   name: main
+        #   protocol: TCP
+        resources:
+          limits:
+            cpu: 4000m
+            memory: 8Gi
+          requests:
+            cpu: 10m
+            memory: 50Mi
+      #   volumeMounts:
+      #   - mountPath: /app/config
+      #     name: config
+      #     subPath: jellyseerr
+      # volumes:
+      # - name: config
+      #   persistentVolumeClaim:
+      #     claimName: media-config

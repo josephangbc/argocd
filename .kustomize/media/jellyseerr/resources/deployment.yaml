@@ -34,7 +34,7 @@ spec:
           periodSeconds: 10
           successThreshold: 1
           timeoutSeconds: 5
-        name: jellyfin
+        name: jellyseerr
         ports:
         - containerPort: 5055
           name: main
