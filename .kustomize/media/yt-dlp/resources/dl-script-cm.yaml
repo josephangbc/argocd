@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: yt-dlp-script
+  namespace: media
+data:
+  yt-dlp-script.sh: |
+    apk add ffmpeg
+    yt-dlp --update
+    yt-dlp -x --audio-format mp3 --download-archive download-archive.txt https://music.youtube.com/playlist?list=PLG-F5zLmWfX5acpw2euWH7N8Ko-g7Y7UR
+    sleep 60
+    yt-dlp -x --audio-format mp3 --download-archive download-archive.txt https://music.youtube.com/playlist?list=PLG-F5zLmWfX5acpw2euWH7N8Ko-g7Y7UR
+    sleep 10000
