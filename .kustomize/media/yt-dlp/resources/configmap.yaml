@@ -10,7 +10,7 @@ data:
     --download-archive /archive/download-archive.txt
     -P "/music"
     --embed-metadata
-    --write-thumbnail
+    --embed-thumbnail
     -o "%(artist)s - %(album)s - %(title)s.%(ext)s"
   yt-dlp-script.sh: |
     apk add ffmpeg
