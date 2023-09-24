@@ -27,6 +27,7 @@ spec:
         # command:
         # - "sleep"
         args:
+        - --update
         - -x
         - --audio-format mp3
         - https://music.youtube.com/playlist?list=PLG-F5zLmWfX5acpw2euWH7N8Ko-g7Y7UR
