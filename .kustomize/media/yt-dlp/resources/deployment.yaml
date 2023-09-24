@@ -18,14 +18,15 @@ spec:
         app.kubernetes.io/instance: yt-dlp
         app.kubernetes.io/name: yt-dlp
     spec:
+      securityContext:
+        runAsUser: 0
+        fsGroup: 0
       containers:
       - env:
         - name: TZ
           value: Asia/Singapore
         image: tnk4on/yt-dlp:latest
         imagePullPolicy: IfNotPresent
-        securityContext:
-          runAsUser: 0
         command:
         - sh
         - -c
