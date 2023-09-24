@@ -24,6 +24,8 @@ spec:
           value: Asia/Singapore
         image: tnk4on/yt-dlp:latest
         imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsUser: 0
         command:
         - sh
         - -c
