@@ -55,6 +55,7 @@ spec:
       - name: script
         configMap:
           name: yt-dlp-script
+          defaultMode: 0777
       # - name: config
       #   persistentVolumeClaim:
       #     claimName: media-config
