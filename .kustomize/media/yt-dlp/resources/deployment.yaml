@@ -46,16 +46,25 @@ spec:
             memory: 50Mi
         volumeMounts:
         - mountPath: /tmp/yt-dlp-script.sh
-          name: script
+          name: yt-dlp-config
           subPath: yt-dlp-script.sh
-      #   - mountPath: /app/config
-      #     name: config
-      #     subPath: jellyseerr
+        - mountPath: /etc/yt-dlp.conf
+          name: yt-dlp-config
+          subPath: yt-dlp.conf
+        - mountPath: /archive
+          name: config
+          subPath: yt-dlp
+        - name: data
+          mountPath: /music
+          subPath: library/music
       volumes:
-      - name: script
+      - name: yt-dlp-config
         configMap:
-          name: yt-dlp-script
+          name: yt-dlp-config
           defaultMode: 0777
-      # - name: config
-      #   persistentVolumeClaim:
-      #     claimName: media-config
+      - name: config
+        persistentVolumeClaim:
+          claimName: media-config
+      - name: data
+        persistentVolumeClaim:
+          claimName: media-data
