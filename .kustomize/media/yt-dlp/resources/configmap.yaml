@@ -9,6 +9,8 @@ data:
     --audio-format mp3
     --download-archive /archive/download-archive.txt
     -P "/music"
+    --embed-metadata
+    -o "%(title)s.%(ext)s"
   yt-dlp-script.sh: |
     apk add ffmpeg
     yt-dlp --update
