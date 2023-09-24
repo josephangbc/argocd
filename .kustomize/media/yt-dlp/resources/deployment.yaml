@@ -25,9 +25,9 @@ spec:
         image: tnk4on/yt-dlp:latest
         imagePullPolicy: IfNotPresent
         command:
-        - ""
+        - "sleep"
         args:
-        - sleep 10000
+        - "10000"
         name: yt-dlp
         # ports:
         # - containerPort: 5055
