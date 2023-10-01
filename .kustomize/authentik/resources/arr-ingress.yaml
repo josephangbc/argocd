@@ -45,4 +45,4 @@ spec:
           service:
             name: authentik
             port:
-              number: 6767
+              number: 80
