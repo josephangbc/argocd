@@ -10,5 +10,6 @@ resources:
   - jellyfin
   - jellyseerr
   - yt-dlp
+  - bazarr
 
 namespace: media
