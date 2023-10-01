@@ -74,9 +74,15 @@ spec:
         - mountPath: /config
           name: config
           subPath: bazarr
-        - mountPath: /data
-          name: config
+        - mountPath: /bazarr
+          name: data
           subPath: library/bazarr
+        - mountPath: /tv
+          name: data
+          subPath: library/tv
+        - mountPath: /movies
+          name: data
+          subPath: library/movies
       volumes:
       - name: config
         persistentVolumeClaim:
