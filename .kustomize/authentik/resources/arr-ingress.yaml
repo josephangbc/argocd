@@ -36,7 +36,7 @@ spec:
             name: authentik
             port:
               number: 80
-  - host: lidarr.kopi.quest
+  - host: bazarr.kopi.quest
     http:
       paths:
       - path: "/"
@@ -45,4 +45,4 @@ spec:
           service:
             name: authentik
             port:
-              number: 80
+              number: 6767
