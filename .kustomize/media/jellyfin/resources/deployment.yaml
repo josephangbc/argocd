@@ -60,8 +60,8 @@ spec:
             cpu: 4000m
             memory: 8Gi
           requests:
-            cpu: 10m
-            memory: 50Mi
+            cpu: 1000m
+            memory: 1000Mi
         # startupProbe:
         #   failureThreshold: 60
         #   initialDelaySeconds: 10
