@@ -1,8 +1,7 @@
-prometheus:
-  pushgateway:
-    enabled: false
-  alertmanager:
-    enabled: false
+prometheus-pushgateway:
+  enabled: false
+alertmanager:
+  enabled: false
 
 server:
   ingress:
