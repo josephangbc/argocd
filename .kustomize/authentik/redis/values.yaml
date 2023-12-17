@@ -5,6 +5,16 @@ auth:
 master:
   persistence:
     size: 1Gi
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - espresso-0
+            - espresso-1
 
 replica:
   replicaCount: 0
