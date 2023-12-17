@@ -2,5 +2,9 @@ auth:
   existingSecret: redis
   existingSecretPasswordKey: redis-password
 
+master:
+  persistence:
+    size: "1Gi"
+
 replica:
   replicaCount: 0
