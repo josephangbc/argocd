@@ -1,0 +1,9 @@
+prometheus:
+  pushgateway:
+    enabled: false
+
+server:
+  ingress:
+    enabled: true
+    hosts:
+      - prometheus.kopi.quest
