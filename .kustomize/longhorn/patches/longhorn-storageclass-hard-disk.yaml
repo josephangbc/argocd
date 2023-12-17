@@ -23,5 +23,5 @@ metadata:
   labels:
     app.kubernetes.io/instance: longhorn
     app.kubernetes.io/name: longhorn
-  name: longhorn-storageclass
+  name: longhorn-storageclass-hard-disk
   namespace: longhorn-system
