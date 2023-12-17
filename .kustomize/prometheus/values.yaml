@@ -7,3 +7,7 @@ server:
     enabled: true
     hosts:
       - prometheus.kopi.quest
+  persistentVolume:
+     enabled: true
+     storageClass: longhorn-sd
+     size: 4Gi
