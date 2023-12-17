@@ -4,4 +4,4 @@ metadata:
   name: espresso-0
   namespace: longhorn-system
 spec:
-  allowScheduling: false
+  allowScheduling: true

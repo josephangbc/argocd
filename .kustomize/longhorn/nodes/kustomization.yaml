@@ -4,5 +4,6 @@ kind: Kustomization
 resources:
   - espresso-0.yaml
   - espresso-1.yaml
+  - espresso-2.yaml
 
 namespace: longhorn-system
