@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: kube-system
+    namespace: prometheus
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/JosephABC/argocd.git
