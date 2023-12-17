@@ -3,5 +3,7 @@ kind: Kustomization
 
 resources:
   - ingress.yaml
+  - longhorn-storageclass-sd.yaml
+  - longhorn-storageclass-hard-disk.yaml
 
 namespace: longhorn-system
