@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - postgresql-secrets.yaml
-  - postgresql-pv.yaml
   - postgresql-pvc.yaml
   - redis-password.yaml
   - authentik-secretkey.yaml
