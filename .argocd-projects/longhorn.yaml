@@ -13,8 +13,8 @@ spec:
     targetRevision: HEAD
     path: .kustomize/longhorn
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    # automated:
+    #   prune: true
+    #   selfHeal: true
     syncOptions:
       - CreateNamespace=true
