@@ -4,10 +4,9 @@ metadata:
   namespace: authentik
   name: postgresql
 spec:
-  storageClassName: longhorn-hard-disk
+  storageClassName: longhorn-sd
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: "8Gi"
-      
