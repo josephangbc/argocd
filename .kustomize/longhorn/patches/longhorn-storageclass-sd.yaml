@@ -4,7 +4,7 @@ data:
     kind: StorageClass
     apiVersion: storage.k8s.io/v1
     metadata:
-      name: longhorn
+      name: longhorn-sd
       annotations:
         storageclass.kubernetes.io/is-default-class: "false"
     provisioner: driver.longhorn.io
@@ -17,6 +17,7 @@ data:
       fromBackup: ""
       fsType: "ext4"
       dataLocality: "disabled"
+      diskSelector: "sd"
 kind: ConfigMap
 metadata:
   labels:
