@@ -1,6 +1,8 @@
 prometheus:
   pushgateway:
     enabled: false
+  alertmanager:
+    enabled: false
 
 server:
   ingress:
