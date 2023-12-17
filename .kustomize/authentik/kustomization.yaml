@@ -6,6 +6,5 @@ resources:
   - postgresql
   - redis
   - resources
-  - migration
 
 namespace: authentik
