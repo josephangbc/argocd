@@ -3,14 +3,14 @@ kind: Kustomization
 
 resources:
   # Prometheus Operator
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-clusterRole.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-clusterRoleBinding.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-deployment.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-networkPolicy.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-prometheusRule.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-service.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-serviceAccount.yaml
-  - https://github.com/prometheus-operator/kube-prometheus/blob/release-0.13/manifests/prometheusOperator-serviceMonitor.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-clusterRole.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-clusterRoleBinding.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-deployment.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-networkPolicy.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-prometheusRule.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-service.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-serviceAccount.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/prometheusOperator-serviceMonitor.yaml
 
 
   # CRDS
