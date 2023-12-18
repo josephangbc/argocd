@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: monitoring
   namespace: argocd      
 spec:
   project: default
   destination:
-    namespace: prometheus
+    namespace: monitoring
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/JosephABC/argocd.git
     targetRevision: HEAD
-    path: .kustomize/prometheus
+    path: .kustomize/monitoring
     plugin:
       name: kustomize-enable-helm
   syncPolicy:

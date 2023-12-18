@@ -1,5 +1,0 @@
-ingress:
-  enabled: true
-  hosts: 
-    - grafana.kopi.quest
-  ingressClassName: nginx
