@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/grafana-deployment.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/grafana-service.yaml
+  - https://raw.githubusercontent.com/prometheus-operator/kube-prometheus/release-0.13/manifests/grafana-serviceAccount.yaml
+  - resources
