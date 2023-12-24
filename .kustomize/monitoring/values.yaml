@@ -119,6 +119,9 @@ nodeExporter:
       enabled: true
     darwin:
       enabled: false
+
+
+prometheus-node-exporter:
   prometheus:
     monitor:
       enabled: true
