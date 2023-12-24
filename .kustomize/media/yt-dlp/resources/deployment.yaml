@@ -67,4 +67,4 @@ spec:
           claimName: media-config
       - name: data
         persistentVolumeClaim:
-          claimName: media-data
+          claimName: media-data-nfs

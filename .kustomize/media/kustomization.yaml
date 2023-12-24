@@ -3,13 +3,13 @@ kind: Kustomization
 
 resources:
   - resources
-  - sonarr
-  - radarr
-  - transmission
-  - prowlarr
-  - jellyfin
-  - jellyseerr
+  # - sonarr
+  # - radarr
+  # - transmission
+  # - prowlarr
+  # - jellyfin
+  # - jellyseerr
   - yt-dlp
-  - bazarr
+  # - bazarr
 
 namespace: media
