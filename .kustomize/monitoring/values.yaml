@@ -106,9 +106,9 @@ kube-state-metrics:
   prometheus:
     monitor:
       enabled: true
-      selectorOverride:
-        app.kubernetes.io/instance: monitoring
-        app.kubernetes.io/name: kube-state-metrics
+      # selectorOverride:
+      #   app.kubernetes.io/instance: monitoring
+      #   app.kubernetes.io/name: kube-state-metrics
 
 ## Deploy node exporter as a daemonset to all nodes
 ##
