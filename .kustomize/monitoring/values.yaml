@@ -1,3 +1,5 @@
+fullnameOverride: "prometheus"
+
 ## Install Prometheus Operator CRDs
 ##
 crds:
