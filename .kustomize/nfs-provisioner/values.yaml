@@ -9,12 +9,13 @@ nfs:
 # For creating the StorageClass automatically:
 storageClass:
   create: true
+  provisionerName: nfs-provisioner
   defaultClass: false
   name: nfs-client
   allowVolumeExpansion: true
 
   # Method used to reclaim an obsoleted volume
-  reclaimPolicy: Delete
+  reclaimPolicy: Retain
 
   # When set to false your PVs will not be archived by the provisioner upon deletion of the PVC.
   archiveOnDelete: true
