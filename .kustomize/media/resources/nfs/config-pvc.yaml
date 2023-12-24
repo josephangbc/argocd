@@ -3,6 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   namespace: media
   name: media-config
+  annotations:
+    nfs.io/storage-path: config
 spec:
   storageClassName: nfs-client
   accessModes:
