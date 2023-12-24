@@ -1,5 +1,3 @@
-fullnameOverride: "prometheus"
-
 ## Install Prometheus Operator CRDs
 ##
 crds:
@@ -8,8 +6,8 @@ crds:
 ## Create default rules for monitoring the cluster
 ##
 defaultRules:
-  create: false
-  # rules:
+  create: true
+  rules:
   #   alertmanager: true
   #   etcd: true
   #   configReloaders: true
@@ -36,7 +34,7 @@ defaultRules:
   #   kubernetesSystem: true
   #   kubeSchedulerAlerting: true
   #   kubeSchedulerRecording: true
-  #   kubeStateMetrics: true
+    kubeStateMetrics: true
   #   network: true
   #   node: true
   #   nodeExporterAlerting: true
