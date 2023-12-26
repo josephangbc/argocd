@@ -498,12 +498,15 @@ prometheus:
     storageSpec:
     ## Using PersistentVolumeClaim
      volumeClaimTemplate:
-       spec:
-         storageClassName: nfs-client
-         accessModes: ["ReadWriteOnce"]
-         resources:
-           requests:
-             storage: 50Gi
+      metadata:
+        name: prometheus-pvc
+        nfs.io/storage-path: prometheus
+      spec:
+        storageClassName: nfs-client
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 50Gi
 
     ## Using tmpfs volume
     ##
