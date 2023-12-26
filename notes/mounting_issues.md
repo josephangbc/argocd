@@ -11,3 +11,11 @@ sudo exportfs -ra
 ```
 sudo showmount -e 192.168.18.47
 ```
+
+
+### xfs_repair
+```
+sudo xfs_repair -L /dev/sda
+
+sudo fuser -m /mnt/xfs_mount_point
+```

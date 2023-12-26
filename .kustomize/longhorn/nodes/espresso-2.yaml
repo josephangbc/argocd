@@ -15,10 +15,10 @@ spec:
       tags:
       - sd
       diskType: filesystem
-    hard-disk-storage:
-      allowScheduling: true
-      evictionRequested: false
-      path: /mnt/extstorage
-      tags:
-      - hard-disk
-      diskType: filesystem
+    # hard-disk-storage:
+    #   allowScheduling: true
+    #   evictionRequested: false
+    #   path: /mnt/extstorage
+    #   tags:
+    #   - hard-disk
+    #   diskType: filesystem
