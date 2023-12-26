@@ -500,7 +500,8 @@ prometheus:
      volumeClaimTemplate:
       metadata:
         name: prometheus-pvc
-        nfs.io/storage-path: prometheus
+        annotations:
+          nfs.io/storage-path: prometheus
       spec:
         storageClassName: nfs-client
         accessModes: ["ReadWriteOnce"]
