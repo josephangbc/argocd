@@ -122,12 +122,20 @@ nodeExporter:
 
 
 prometheus-node-exporter:
+  extraArgs:
+    - --collector.filesystem.mount-points-exclude=^/(dev|proc|sys|var/lib/docker/.+|var/lib/kubelet/.+)($|/)
+    - --collector.filesystem.fs-types-exclude=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+    - --collector.labels=node
   prometheus:
     monitor:
       enabled: true
       selectorOverride:
         app.kubernetes.io/instance: monitoring
         app.kubernetes.io/name: prometheus-node-exporter
+      relabelings:
+        - source_labels: [__address__]
+          regex: '(.+):.*'
+          target_label: node
 
 ## Manages Prometheus and Alertmanager components
 ##
