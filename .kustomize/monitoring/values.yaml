@@ -134,6 +134,8 @@ prometheus-node-exporter:
       attachMetadata:
         node: true
       relabelings:
+        - action: replace	
+          regex: '(.+):.*'
         - source_labels: [__address__]
           regex: '(.+):.*'
           target_label: node
