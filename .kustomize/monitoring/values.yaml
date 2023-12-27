@@ -134,11 +134,11 @@ prometheus-node-exporter:
       attachMetadata:
         node: true
       relabelings:
-        - action: replace	
+        - sourceLabels: [__address__]
           regex: '(.+):.*'
-        - source_labels: [__address__]
-          regex: '(.+):.*'
-          target_label: node
+          targetLabel: node
+          replacement: $1
+          action: replace
 
 ## Manages Prometheus and Alertmanager components
 ##
