@@ -1,5 +1,5 @@
 nfs:
-  server: 192.168.18.47
+  server: 192.168.18.41
   path: /mnt/nfs
   mountOptions:
   volumeName: nfs-root

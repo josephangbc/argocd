@@ -9,7 +9,7 @@ sudo exportfs -ra
 ```
 #### Check
 ```
-sudo showmount -e 192.168.18.47
+sudo showmount -e 192.168.18.41
 ```
 
 
