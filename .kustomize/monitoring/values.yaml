@@ -134,11 +134,16 @@ prometheus-node-exporter:
       attachMetadata:
         node: true
       relabelings:
-        - sourceLabels: [__address__]
-          regex: '(.+):.*'
-          targetLabel: node
+        - sourceLabels: [__meta_kubernetes_pod_node_name]
+          separator: ;
+          regex: ^(.*)$
+          targetLabel: instance
           replacement: $1
           action: replace
+        - sourceLabels: [nodename]
+          targetLabel: instance
+          regex: "([^:]+)(:[0-9]+)?"
+          replacement: "${1}"
 
 ## Manages Prometheus and Alertmanager components
 ##
