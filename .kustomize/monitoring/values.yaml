@@ -20,9 +20,6 @@ grafana:
   defaultDashboardsEnabled: true
   defaultDashboardsTimezone: Asia/Singapore
 
-  dashboardsConfigMaps:
-    default: "espresso-cluster"
-
   ingress:
     enabled: true
     ingressClassName: nginx
