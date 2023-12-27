@@ -133,6 +133,10 @@ prometheus-node-exporter:
         app.kubernetes.io/name: prometheus-node-exporter
       attachMetadata:
         node: true
+      relabelings:
+        - source_labels: [__address__]
+          regex: '(.+):.*'
+          target_label: node
 
 ## Manages Prometheus and Alertmanager components
 ##
