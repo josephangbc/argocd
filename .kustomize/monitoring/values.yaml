@@ -21,7 +21,7 @@ grafana:
   defaultDashboardsTimezone: Asia/Singapore
 
   dashboardsConfigMaps:
-    prometheus: "espresso-cluster"
+    default: "espresso-cluster"
 
   ingress:
     enabled: true
