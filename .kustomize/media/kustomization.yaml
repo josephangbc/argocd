@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - resources
-  # - sonarr
+  - sonarr
   # - radarr
   # - transmission
   # - prowlarr
