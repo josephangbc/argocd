@@ -7,4 +7,4 @@ resources:
   # - config-pvc.yaml
   # - data-pv.yaml
   # - data-pvc.yaml
-  # - ingress.yaml
+  - ingress.yaml
