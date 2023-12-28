@@ -5,8 +5,8 @@ resources:
   - resources
   - sonarr
   # - radarr
-  # - transmission
-  # - prowlarr
+  - transmission
+  - prowlarr
   - jellyfin
   # - jellyseerr
   - yt-dlp
