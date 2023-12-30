@@ -8,7 +8,7 @@ resources:
   - transmission
   - prowlarr
   - jellyfin
-  # - jellyseerr
+  - jellyseerr
   - yt-dlp
   # - bazarr
 
