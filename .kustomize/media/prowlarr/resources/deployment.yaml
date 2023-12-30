@@ -74,7 +74,7 @@ spec:
         - mountPath: /config
           name: config
           subPath: prowlarr
-        command: ["sleep 1000"]
+        command: ["/bin/sleep 1000"]
       volumes:
       - name: config
         persistentVolumeClaim:
