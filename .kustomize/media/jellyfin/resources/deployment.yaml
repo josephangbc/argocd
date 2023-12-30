@@ -74,10 +74,10 @@ spec:
         - mountPath: /config
           name: config
           subPath: jellyfin
-        # - name: data
-        #   mountPath: /tv
-        #   subPath: library/tv
-        # - name: data
+        - name: data
+          mountPath: /tv
+          subPath: library/tv
+        # - name: data-nfs
         #   mountPath: /movies
         #   subPath: library/movies
         - name: data-nfs
