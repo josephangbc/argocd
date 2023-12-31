@@ -233,6 +233,105 @@
         "type": "timeseries"
       },
       {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        },
+        "id": 22,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "prometheus"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "sum by(namespace) (avg by(name, namespace) (container_fs_writes_bytes_total)) / 2^20",
+            "fullMetaSearch": false,
+            "includeNullMetadata": false,
+            "instant": false,
+            "legendFormat": "__auto",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
+          }
+        ],
+        "title": "Container Writes (Mb)",
+        "type": "timeseries"
+      },
+      {
         "collapsed": false,
         "datasource": {
           "type": "prometheus",
@@ -242,7 +341,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 8
+          "y": 16
         },
         "id": 10,
         "panels": [],
@@ -321,7 +420,7 @@
           "h": 8,
           "w": 12,
           "x": 0,
-          "y": 9
+          "y": 17
         },
         "id": 16,
         "options": {
@@ -420,7 +519,7 @@
           "h": 8,
           "w": 12,
           "x": 12,
-          "y": 9
+          "y": 17
         },
         "id": 17,
         "options": {
@@ -466,7 +565,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 17
+          "y": 25
         },
         "id": 11,
         "panels": [],
@@ -545,7 +644,7 @@
           "h": 8,
           "w": 12,
           "x": 0,
-          "y": 18
+          "y": 26
         },
         "id": 18,
         "options": {
@@ -644,7 +743,7 @@
           "h": 8,
           "w": 12,
           "x": 12,
-          "y": 18
+          "y": 26
         },
         "id": 19,
         "options": {
@@ -723,7 +822,7 @@
           "h": 7,
           "w": 18,
           "x": 0,
-          "y": 26
+          "y": 34
         },
         "hiddenSeries": false,
         "id": 4,
@@ -842,8 +941,7 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "rgba(50, 172, 45, 0.97)",
-                  "value": null
+                  "color": "rgba(50, 172, 45, 0.97)"
                 },
                 {
                   "color": "rgba(237, 129, 40, 0.89)",
@@ -863,7 +961,7 @@
           "h": 7,
           "w": 6,
           "x": 18,
-          "y": 26
+          "y": 34
         },
         "id": 5,
         "options": {
@@ -908,7 +1006,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 33
+          "y": 41
         },
         "id": 12,
         "panels": [],
@@ -971,8 +1069,7 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
-                  "value": null
+                  "color": "green"
                 },
                 {
                   "color": "red",
@@ -987,7 +1084,7 @@
           "h": 8,
           "w": 12,
           "x": 0,
-          "y": 34
+          "y": 42
         },
         "id": 20,
         "options": {
@@ -1042,8 +1139,7 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
-                  "value": null
+                  "color": "green"
                 },
                 {
                   "color": "yellow",
@@ -1139,7 +1235,7 @@
           "h": 7,
           "w": 12,
           "x": 12,
-          "y": 34
+          "y": 42
         },
         "id": 7,
         "options": {
@@ -1280,7 +1376,7 @@
           "h": 7,
           "w": 12,
           "x": 0,
-          "y": 42
+          "y": 50
         },
         "hiddenSeries": false,
         "id": 6,
@@ -1392,7 +1488,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 49
+          "y": 57
         },
         "id": 13,
         "panels": [],
@@ -1423,7 +1519,7 @@
           "h": 7,
           "w": 12,
           "x": 0,
-          "y": 50
+          "y": 58
         },
         "hiddenSeries": false,
         "id": 8,
@@ -1513,7 +1609,7 @@
           "h": 7,
           "w": 12,
           "x": 12,
-          "y": 50
+          "y": 58
         },
         "hiddenSeries": false,
         "id": 9,
@@ -1675,6 +1771,6 @@
     "timezone": "Asia/Singapore",
     "title": "Espresso-Cluster",
     "uid": "c29a79dd-c1b7-4806-a0f4-7c511b11370d",
-    "version": 2,
+    "version": 1,
     "weekStart": ""
   }
