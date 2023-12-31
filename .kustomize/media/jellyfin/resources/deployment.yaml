@@ -90,3 +90,5 @@ spec:
       - name: data-nfs
         persistentVolumeClaim:
           claimName: media-data-nfs
+      nodeSelector:
+        kubernetes.io/hostname: espresso-2
