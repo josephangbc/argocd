@@ -12,6 +12,8 @@ spec:
     repoURL: https://github.com/JosephABC/argocd.git
     targetRevision: HEAD
     path: .kustomize/vaultwarden
+    plugin:
+      name: kustomize-enable-helm
   syncPolicy:
     # automated:
     #   prune: true
