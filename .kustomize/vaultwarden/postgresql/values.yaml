@@ -1,0 +1,11 @@
+auth:
+  database: vaultwarden
+  username: vaultwarden
+  existingSecret: vaultwarden-postgresql
+
+primary:
+  persistence:
+    existingClaim: vaultwarden
+
+volumePermissions:
+  enabled: true

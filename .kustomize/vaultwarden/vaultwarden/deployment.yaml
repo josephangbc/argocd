@@ -19,6 +19,17 @@ spec:
         image: vaultwarden/server:latest
         ports:
         - containerPort: 80
+        env:
+        - name: ADMIN_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: vaultwarden-admin-token
+              key: ADMIN_TOKEN
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: vaultwarden-postgresql
+              key: DATABASE_URL
         volumeMounts:
         - name: vaultwarden-data
           mountPath: /data
