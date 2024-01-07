@@ -30,6 +30,8 @@ spec:
             secretKeyRef:
               name: vaultwarden-postgresql
               key: DATABASE_URL
+        - name: ENABLE_DB_WAL
+          value: false
         volumeMounts:
         - name: vaultwarden-data
           mountPath: /data
