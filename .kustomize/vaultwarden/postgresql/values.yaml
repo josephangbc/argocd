@@ -10,7 +10,8 @@ primary:
     requests:
       memory: 500Mi
   livenessProbe:
-    enabled: false
+    periodSeconds: 30
+    failureThreshold: 15
 
 volumePermissions:
   enabled: true
