@@ -6,6 +6,12 @@ auth:
 primary:
   persistence:
     existingClaim: vaultwarden
+  resources:
+    requests:
+      memory: 500Mi
+  # podSecurityContext:
+  #   fsGroup: 1000
+  #   runAsUser: 1000
 
 volumePermissions:
   enabled: true

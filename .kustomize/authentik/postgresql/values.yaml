@@ -6,9 +6,6 @@ auth:
 primary:
   persistence:
     existingClaim: postgresql
-  resources:
-    requests:
-      memory: 500Mi
 
 volumePermissions:
   enabled: true
