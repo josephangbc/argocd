@@ -10,7 +10,7 @@ primary:
     requests:
       memory: 500Mi
   livenessProbe:
-    initialDelaySeconds: 120
+    enabled: false
 
 volumePermissions:
   enabled: true
