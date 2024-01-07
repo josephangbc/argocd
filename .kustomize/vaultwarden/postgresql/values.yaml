@@ -9,9 +9,8 @@ primary:
   resources:
     requests:
       memory: 500Mi
-  # podSecurityContext:
-  #   fsGroup: 1000
-  #   runAsUser: 1000
+  livenessProbe:
+    initialDelaySeconds: 120
 
 volumePermissions:
   enabled: true
