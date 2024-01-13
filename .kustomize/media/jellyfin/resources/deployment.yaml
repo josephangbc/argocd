@@ -77,9 +77,9 @@ spec:
         - name: data-nfs
           mountPath: /tv
           subPath: library/tv
-        # - name: data-nfs
-        #   mountPath: /movies
-        #   subPath: library/movies
+        - name: data-nfs
+          mountPath: /movies
+          subPath: library/movies
         - name: data-nfs
           mountPath: /music
           subPath: library/music
