@@ -16,9 +16,14 @@ storageClasses:
     # If not present, some location will be chosen to create volumes with the filesystem type ext4.
     # Note that these parameters cannot get updated once deployed - any subsequent changes get ignored!
     parameters:
-     dsm: "192.168.18.54"
-     fsType: btrfs
-     type: thin
-     location: /volume2
+      dsm: "192.168.18.54"
+      fsType: btrfs
+      type: thin
+      location: /volume2
   retain:
     reclaimPolicy: Retain
+    parameters:
+      dsm: "192.168.18.54"
+      fsType: btrfs
+      type: thin
+      location: /volume2
