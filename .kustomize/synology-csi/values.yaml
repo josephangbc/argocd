@@ -1,3 +1,24 @@
 clientInfoSecret:
   create: false
   name: client-info
+
+storageClasses:
+  delete:
+    # One of true or false (default):
+    ##disabled: false
+    # One of true or false (default):
+    ##isDefault: false
+    # One of "Retain" or "Delete" (default):
+    reclaimPolicy: Delete
+    # One of "WaitForFirstConsumer" or "Immediate" (default):
+    ##volumeBindingMode: Immediate
+
+    # If not present, some location will be chosen to create volumes with the filesystem type ext4.
+    # Note that these parameters cannot get updated once deployed - any subsequent changes get ignored!
+    parameters:
+     dsm: "192.168.18.54"
+     fsType: btrfs
+     type: thick
+     location: /volume2
+  retain:
+    reclaimPolicy: Retain
