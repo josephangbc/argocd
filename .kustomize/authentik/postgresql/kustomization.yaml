@@ -4,7 +4,7 @@ kind: Kustomization
 helmCharts:
 - name: postgresql
   repo: https://charts.bitnami.com/bitnami
-  version: 15.5.5
+  version: 14.3.3
   releaseName: authentik-postgresql
   namespace: authentik
   valuesFile: values.yaml
