@@ -9,3 +9,6 @@ primary:
 
 volumePermissions:
   enabled: true
+
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "-1"

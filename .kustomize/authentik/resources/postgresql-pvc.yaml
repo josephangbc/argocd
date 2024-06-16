@@ -3,8 +3,10 @@ kind: PersistentVolumeClaim
 metadata:
   namespace: authentik
   name: postgresql
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
-  storageClassName: longhorn-sd
+  storageClassName: synology-csi-retain
   accessModes:
     - ReadWriteMany
   resources:
