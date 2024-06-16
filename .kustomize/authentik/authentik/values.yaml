@@ -1,24 +1,26 @@
-envValueFrom:
-  AUTHENTIK_SECRET_KEY:
-    secretKeyRef:
-      key: authentik-secretkey
-      name: authentik-secretkey
-  AUTHENTIK_POSTGRESQL__PASSWORD:
-    secretKeyRef:
-      key: password
-      name: postgresql
-  AUTHENTIK_REDIS__PASSWORD:
-    secretKeyRef:
-      key: redis-password
-      name: redis
-  
-ingress:
-  # Specify kubernetes ingress controller class name
-  ingressClassName: nginx
-  enabled: true
-  hosts:
-    # Specify external host name
-    - host: authentik.kopi.quest
-      paths:
-        - path: "/"
-          pathType: Prefix
+global:
+  env:
+    - name: AUTHENTIK_SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: authentik-secretkey
+          key: authentik-secretkey
+    - name: AUTHENTIK_POSTGRESQL__PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: postgresql
+          key: password
+    - name: AUTHENTIK_REDIS__PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: redis
+          key: redis-password
+server:
+  ingress:
+    ingressClassName: nginx
+    enabled: true
+    hosts:
+      - authentik.kopi.quest
+    paths:
+      - /
+    pathType: Prefix
