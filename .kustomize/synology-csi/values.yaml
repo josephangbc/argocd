@@ -18,7 +18,7 @@ storageClasses:
     parameters:
      dsm: "192.168.18.54"
      fsType: btrfs
-     type: thick
+     type: thin
      location: /volume2
   retain:
     reclaimPolicy: Retain
