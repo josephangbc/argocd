@@ -1,0 +1,3 @@
+clientInfoSecret:
+  create: false
+  name: client-info

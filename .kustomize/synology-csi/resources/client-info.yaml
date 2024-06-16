@@ -1,0 +1,26 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata":
+    {
+      "name": "client-info",
+      "namespace": "synology-csi",
+      "creationTimestamp": null,
+    },
+  "spec":
+    {
+      "template":
+        {
+          "metadata":
+            {
+              "name": "client-info",
+              "namespace": "synology-csi",
+              "creationTimestamp": null,
+            },
+        },
+      "encryptedData":
+        {
+          "client-info.yaml": "AgCDrLwcqq5QIQqHGMwHPFbwFpOo1fwPVxJ8W+R9bcgfh0HQ8P8ofY8h6LYmC5UWoS3k8gBrwNTiYXv7wSYzg25NbglUvPP/qX0jLmT2O9RVAmufUEi7OoeX6PSwsqgQIIFx/2qXKW3q6B32UDwfFuGRjajpu43cYZCtd2cID38QJ2rmOQsSHczhjUDf2j5kEu3iA/31QA2h9kvhOIoj3sX0eFBdXPaR9IVytNBTl41LD/gDoWBeNbD9nNG4WcXBXIkGDACzzxZWNFkFerEK6SD4nBnLal3KX+xA3oebzo6xrf3+5fPagu7fPbs9bTKM5X7EybQjnO/1RUgT6q/rZUzr1Zngs2bTB4LD6LsyV5vCEejyCF6/6MaL7/Vq94fAQ3czMU9dXlj/SRC2EWD/bRC6cgHKr9McoHZI3bvC9nKetkoFq17sXXQlOW7NkLcO4AowBDLdZtolVVtGxlq09L88qo7z9n+jl55DkMzfeFuaSULl2E0xMlV9EovqQC9u2JTtBNvD/hBw3R0Ywd3FQL7rr8e+veGGG0HAlEQZ6LVUyYelNTLykR1Z3Ec5mx5VkbRvgq+k0bG55wScxlQwcGlVjogZVVblPGdxc9VuH26foMNBy9TQ0coxLNKNIVRovQiq31pk65q3UHZ2omQxjZzoGneh4RL2N7aW08ayWnwmbTH2rnWo+1FcdSwYWH3dVdTM9Ynv0EJxJidiF7ECyVxNjC5PNlI0qgv5NUHSKFEtmpOhuPgkEKzwgr6wmvfRJkZwPHCECWqimsfJQR6w3dvkmqGvVPTlVYvTT3RbxsmWpKFKF+NdRzNvjPtA3k1Crn4wLaNF8u/nr1ZH4G3+DpkmC7M=",
+        },
+    },
+}
