@@ -7,3 +7,6 @@ helmCharts:
   releaseName: radarr 
   namespace: media
   valuesFile: values.yaml
+
+resources:
+  - resources/config-pvc.yaml

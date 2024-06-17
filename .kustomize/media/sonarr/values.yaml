@@ -21,6 +21,9 @@ volumes:
   - name: config
     persistentVolumeClaim:
       claimName: media-config
+  - name: sonarr-config
+    persistentVolumeClaim:
+      claimName: sonarr-config
   - name: data
     persistentVolumeClaim:
       claimName: media-data-nfs
@@ -29,6 +32,7 @@ volumeMounts:
   - name: config
     mountPath: /config
     subPath: sonarr
+  - name: 
   - name: data
     mountPath: /downloads
     subPath: "downloads/transmission" # Path where sonarr picks up downloaded episodes

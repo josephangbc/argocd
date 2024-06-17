@@ -21,6 +21,9 @@ volumes:
   - name: config
     persistentVolumeClaim:
       claimName: media-config
+  - name: radarr-config
+    persistentVolumeClaim:
+      claimName: radarr-config
   - name: data
     persistentVolumeClaim:
       claimName: media-data-nfs

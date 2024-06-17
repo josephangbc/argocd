@@ -78,3 +78,6 @@ spec:
       - name: config
         persistentVolumeClaim:
           claimName: media-config
+      - name: prowlarr-config
+        persistentVolumeClaim:
+          claimName: prowlarr-config
