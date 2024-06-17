@@ -74,7 +74,6 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
-          subPath: transmission
         - mountPath: /downloads
           name: data
           subPath: downloads/transmission
@@ -83,9 +82,6 @@ spec:
           subPath: downloads/watch
       volumes:
       - name: config
-        persistentVolumeClaim:
-          claimName: media-config
-      - name: transmission-config
         persistentVolumeClaim:
           claimName: transmission-config
       - name: data
