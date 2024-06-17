@@ -73,7 +73,6 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
-          subPath: bazarr
         - mountPath: /bazarr
           name: data
           subPath: library/bazarr
@@ -86,7 +85,7 @@ spec:
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: media-config
+          claimName: bazarr-config
       - name: data
         persistentVolumeClaim:
           claimName: media-data-nfs
