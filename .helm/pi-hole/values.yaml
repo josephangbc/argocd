@@ -18,7 +18,7 @@ dnsmasq:
     - address=/router.local/192.168.18.1
     - address=/kopi.quest/192.168.18.150
 
-whitelists:
+whitelist:
   - googleadservices.com
   - www.googleadservices.com
   - ad.doubleclick.net
