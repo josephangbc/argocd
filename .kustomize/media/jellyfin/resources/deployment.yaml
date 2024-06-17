@@ -72,8 +72,7 @@ spec:
         #   timeoutSeconds: 2
         volumeMounts:
         - mountPath: /config
-          name: config
-          subPath: jellyfin
+          name: jellyfin-config
         - name: data-nfs
           mountPath: /tv
           subPath: library/tv
@@ -84,9 +83,6 @@ spec:
           mountPath: /music
           subPath: library/music
       volumes:
-      - name: config
-        persistentVolumeClaim:
-          claimName: media-config
       - name: data-nfs
         persistentVolumeClaim:
           claimName: media-data-nfs
