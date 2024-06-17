@@ -5,9 +5,9 @@ metadata:
   annotations:
     nfs.io/storage-path: vaultwarden
 spec:
-  storageClassName: nfs-client
+  storageClassName: synology-csi-retain
   accessModes:
     - ReadWriteMany
   resources:
     requests:
-      storage: 2Gi
+      storage: 1Gi
