@@ -90,5 +90,6 @@ spec:
       - name: data-nfs
         persistentVolumeClaim:
           claimName: media-data-nfs
-      nodeSelector:
-        kubernetes.io/hostname: espresso-2
+      - name: jellyfin-config
+        persistentVolumeClaim:
+          claimName: jellyfin-config-pvc
