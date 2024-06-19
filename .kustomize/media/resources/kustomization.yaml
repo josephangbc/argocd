@@ -3,8 +3,4 @@ kind: Kustomization
 
 resources:
   - nfs
-  # - config-pv.yaml
-  # - config-pvc.yaml
-  # - data-pv.yaml
-  # - data-pvc.yaml
-  # - ingress.yaml
+  - data-pvc-nas.yaml
