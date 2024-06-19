@@ -52,8 +52,8 @@ spec:
           name: yt-dlp-config
           subPath: yt-dlp.conf
         - mountPath: /archive
-          name: config
-          subPath: yt-dlp
+          name: data
+          subPath: yt-dlp-config/archive
         - name: data
           mountPath: /music
           subPath: library/music
@@ -62,9 +62,6 @@ spec:
         configMap:
           name: yt-dlp-config
           defaultMode: 0777
-      - name: config
-        persistentVolumeClaim:
-          claimName: media-config
       - name: data
         persistentVolumeClaim:
-          claimName: media-data-nfs
+          claimName: media-data
