@@ -1,0 +1,21 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "tuya-config",
+    "namespace": "monitoring",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "tuya-config",
+        "namespace": "monitoring",
+        "creationTimestamp": null
+      }
+    },
+    "encryptedData": {
+      "config.yaml": "AgCaw/qvgX5UtXE7VCYR4GLSI7MH3pPTBvLKVt8qhi1oi9e1JpgPYV2mnFpw8axgldyB/CYb1hakaa1zvjfT6OpACVGTTvO6Ft9NXq2hwU5Lv74+Ib8ZYPLDN7WsI5HoRaeSqhNHjBEmayll2h59h7HzmomUXaIsAc2GmUN4neoFHGFbh7utMhj01L48OBOVvTiIREZQGzImwaCHsTIhuuvAaZbfu+tI1lgDu9JamTEIK1+kV6+SIX23YZf8QG1mzsVc+KZSnwNLe2WwfpY+pHUsSq/s0d/DNGrjsm7HlbYHHCqbAjbXDu/m/NqjZaoaafIVM382zW0UnZBDgmDRAP70oGnK7ZXAD3BzfYScaB/987SvuuFHV2xcjcTiueQzwTrmT9Z0rKOtzR5mfoK7fERkM/4Szzixj2ztTqtlzeEE0J0dIy+7W05gZJ3WoIHQM76ghQGkxaH3B4GCgNVs1x+i1CXC2ABsBfZuM+dkQe6Bk4Q2JO57tITdrauaVED4VUl9hrSFzhDN8uinVgTWTGxoHyergkIuqY1btgTJD6hJ3KIakgwPz9dvQ7VrcF7tMdxj9f7/+KTTrP4KeTcW2CouwWm1qtcBIksiWvOJl9AeLKToexDekMwUR1HTEP54GqmkrNj3Q+4T8PUk4pIAXg9gdfquMY0uWYxkjFV+6lx0LJmwMkVC/JZH27ZNPrdjv8yPDUBmGaDetnBf9Rl//3wQsQQe6MG6P0BzX1mHMabapw6enoKnbdGrhC4wK+aKBlIvfC8iDGH+CQ+rCUuq0d7xvzr/25WgbH7+7Bwc3Gw9o7qAe21KobAp/dYn1ygFPzxPFil+KRc="
+    }
+  }
+}

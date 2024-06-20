@@ -1,0 +1,47 @@
+replicaCount: 1 # number of pod replicas
+
+image:
+  repository: ghcr.io/rkosegi/tuya-smartplug-exporter   # image repository
+  pullPolicy: IfNotPresent # image pull policy
+  tag: "" # image tag, when omitted, then chart version is assumed
+
+imagePullSecrets: [] # List of pull secrets
+nameOverride: "" # Override release name
+fullnameOverride: "" # Override full name
+
+serviceAccount:
+  create: true # Specifies whether a service account should be created
+  annotations: {} # Annotations to add to the service account
+  name: "" # The name of the service account to use. If not set and create is true, a name is generated using the fullname template
+
+serviceMonitor:
+  enabled: true # Flag to enable ServiceMonitor resource
+  scrape_config: # scrape configuration
+    - port: metrics
+      interval: 60s
+
+podAnnotations: {} # Additional annotations to put on pods
+
+podSecurityContext: {} # Pod security context
+securityContext: {}
+
+service:
+  type: ClusterIP # service type
+  port: 80 # service port
+
+resources: {} # Resources
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+#   memory: 128Mi
+nodeSelector: {} # Node selector
+tolerations: [] # Tolerations
+affinity: {} # Node affinity
+
+config: []
+#  - name: plug-kitchen-1
+#    id: 87e98a987b87b12354a54c
+#    key: 0987654321abcdef
+#    ip: 192.168.1.5
