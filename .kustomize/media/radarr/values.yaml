@@ -23,7 +23,7 @@ volumes:
       claimName: radarr-config
   - name: data
     persistentVolumeClaim:
-      claimName: media-data-nfs
+      claimName: media-data
 
 volumeMounts:
   - name: config
