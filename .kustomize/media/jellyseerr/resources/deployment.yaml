@@ -71,4 +71,4 @@ spec:
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: media-config
+          claimName: jellyseer-config
