@@ -545,14 +545,14 @@ prometheus:
      volumeClaimTemplate:
       metadata:
         name: prometheus-pvc
-        annotations:
-          nfs.io/storage-path: prometheus
+        # annotations:
+        #   nfs.io/storage-path: prometheus
       spec:
-        storageClassName: nfs-csi
+        storageClassName: synology-csi-retain
         accessModes: ["ReadWriteOnce"]
         resources:
           requests:
-            storage: 50Gi
+            storage: 10Gi
 
     ## Using tmpfs volume
     ##
