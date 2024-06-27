@@ -204,7 +204,7 @@ prometheus:
     ## ref: https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/api.md#webtlsconfig
     web: {}
 
-    scrapeInterval: "300s"
+    scrapeInterval: "60s"
 
     ## Exemplars related settings that are runtime reloadable.
     ## It requires to enable the exemplar storage feature to be effective.
@@ -548,7 +548,7 @@ prometheus:
         annotations:
           nfs.io/storage-path: prometheus
       spec:
-        storageClassName: nfs-client
+        storageClassName: nfs-csi
         accessModes: ["ReadWriteOnce"]
         resources:
           requests:
