@@ -1,3 +1,7 @@
 - op: replace
   path: /spec/endpoints/0/interval
   value: 60s
+
+- op: replace
+  path: /spec/selector/matchLabels/app.kubernetes.io~1instance
+  value: monitoring
