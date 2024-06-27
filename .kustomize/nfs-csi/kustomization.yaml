@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/deploy/v4.7.0/csi-nfs-controller.yaml
+  - https://github.com/kubernetes-csi/csi-driver-nfs/raw/master/deploy/v4.7.0/csi-nfs-driverinfo.yaml
+  - https://github.com/kubernetes-csi/csi-driver-nfs/raw/master/deploy/v4.7.0/csi-nfs-node.yaml
+  - https://github.com/kubernetes-csi/csi-driver-nfs/raw/master/deploy/v4.7.0/rbac-csi-nfs.yaml
+  - resources/storage-class-retain.yaml
+
+namespace: nfs-csi
