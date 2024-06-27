@@ -64,4 +64,4 @@ spec:
           defaultMode: 0777
       - name: data
         persistentVolumeClaim:
-          claimName: media-data
+          claimName: data

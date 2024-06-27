@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - nfs
   - data-pvc-nas.yaml
+  - data-pvc-nas-nfs.yaml
