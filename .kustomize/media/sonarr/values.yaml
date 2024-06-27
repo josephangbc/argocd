@@ -23,7 +23,7 @@ volumes:
       claimName: sonarr-config
   - name: data
     persistentVolumeClaim:
-      claimName: media-data
+      claimName: data
 
 volumeMounts:
   - name: config

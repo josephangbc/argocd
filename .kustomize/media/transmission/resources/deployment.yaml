@@ -86,4 +86,4 @@ spec:
           claimName: transmission-config
       - name: data
         persistentVolumeClaim:
-          claimName: media-data
+          claimName: data

@@ -85,7 +85,7 @@ spec:
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: media-data
+          claimName: data
       - name: config
         persistentVolumeClaim:
           claimName: jellyfin-config
