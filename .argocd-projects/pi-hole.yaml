@@ -16,7 +16,7 @@ spec:
         releaseName: pi-hole
         valueFiles:
           - $valuesFilesRepo/.helm/pi-hole/values.yaml
-    - repoURL: https://github.com/JosephABC/argocd.git
+    - repoURL: https://github.com/josephangbc/argocd.git
       ref: valuesFilesRepo
   destination:
     server: https://kubernetes.default.svc

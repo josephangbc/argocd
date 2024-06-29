@@ -9,7 +9,7 @@ spec:
     namespace: tailscale
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/JosephABC/argocd.git
+    repoURL: https://github.com/josephangbc/argocd.git
     targetRevision: HEAD
     path: .kustomize/tailscale
   syncPolicy:

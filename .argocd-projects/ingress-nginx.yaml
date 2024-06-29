@@ -16,7 +16,7 @@ spec:
         releaseName: ingress-nginx
         valueFiles:
           - $valuesFilesRepo/.helm/ingress-nginx/values.yaml
-    - repoURL: https://github.com/JosephABC/argocd.git
+    - repoURL: https://github.com/josephangbc/argocd.git
       ref: valuesFilesRepo
   destination:
     server: https://kubernetes.default.svc
