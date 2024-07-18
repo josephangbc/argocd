@@ -6,3 +6,4 @@ resources:
   - service.yaml
   - ingress.yaml
   - config-pvc.yaml
+  - config-pvc-csi.yaml
