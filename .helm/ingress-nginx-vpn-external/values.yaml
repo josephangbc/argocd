@@ -5,3 +5,6 @@ controller:
       tailscale.com/expose: "true"
   extraArgs:
     "default-ssl-certificate": "cert-manager/kopi-quest-tls"
+
+ingressClassResource:
+    name: nginx-vpn-external
