@@ -6,5 +6,5 @@ controller:
   extraArgs:
     "default-ssl-certificate": "cert-manager/kopi-quest-tls"
 
-ingressClassResource:
+  ingressClassResource:
     name: nginx-vpn-external
