@@ -5,3 +5,10 @@ controller:
       tailscale.com/expose: "true"
   extraArgs:
     "default-ssl-certificate": "cert-manager/kopi-quest-tls"
+  
+  ingressClassResource:
+    name: nginx
+    default: true
+    controllerValue: k8s.io/ingress-nginx
+  
+  ingressClass: nginx
