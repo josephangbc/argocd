@@ -4,6 +4,7 @@ metadata:
   name: synology-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/proxy-body-size: "500m"
 spec:
   ingressClassName: nginx-vpn-external
   rules:
