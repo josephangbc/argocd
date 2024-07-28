@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: synology-service
+  namespace: default
+subsets:
+  - addresses:
+      - ip: 192.168.18.54
+    ports:
+      - name: http
+        port: 5000 # This should match the Synology NAS port
+      - name: https
+        port: 5001 # This should match the Synology NAS port
