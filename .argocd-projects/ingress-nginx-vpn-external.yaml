@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress-nginx-vpn-external
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  sources:
+    - repoURL: https://kubernetes.github.io/ingress-nginx
+      targetRevision: 4.7.1
+      path: ingress-nginx 
+      chart: ingress-nginx 
+      helm:
+        releaseName: ingress-nginx-vpn-external
+        valueFiles:
+          - $valuesFilesRepo/.helm/ingress-nginx-vpn-external/values.yaml
+    - repoURL: https://github.com/josephangbc/argocd.git
+      ref: valuesFilesRepo
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ingress-nginx-vpn-external
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
