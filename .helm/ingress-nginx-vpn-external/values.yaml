@@ -8,3 +8,4 @@ controller:
 
   ingressClassResource:
     name: nginx-vpn-external
+    default: false
