@@ -4,7 +4,7 @@ metadata:
   name: synology-service
 spec:
   type: ExternalName
-  externalName: 192.168.18.54
+  externalName: nas.local
   ports:
   - name: http
     port: 80
