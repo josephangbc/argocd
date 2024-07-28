@@ -8,6 +8,6 @@ subsets:
       - ip: 192.168.18.54
     ports:
       - name: http
-        port: 5000 # This should match the Synology NAS port
+        port: 5110 # This should match the Synology NAS port
       - name: https
-        port: 5001 # This should match the Synology NAS port
+        port: 5111 # This should match the Synology NAS port
