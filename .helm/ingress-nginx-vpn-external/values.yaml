@@ -10,3 +10,5 @@ controller:
     name: nginx-vpn-external
     default: false
     controllerValue: k8s.io/nginx-vpn-external
+  
+  ingressClass: nginx-vpn-external
