@@ -13,14 +13,14 @@ spec:
       path: ingress-nginx 
       chart: ingress-nginx 
       helm:
-        releaseName: ingress-nginx-vpn-external
+        releaseName: ingress-vpn-ext
         valueFiles:
           - $valuesFilesRepo/.helm/ingress-nginx-vpn-external/values.yaml
     - repoURL: https://github.com/josephangbc/argocd.git
       ref: valuesFilesRepo
   destination:
     server: https://kubernetes.default.svc
-    namespace: ingress-nginx-vpn-external
+    namespace: ingress-nginx
   syncPolicy:
     automated:
       prune: true
