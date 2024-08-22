@@ -73,7 +73,8 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
+          subPath: prowlarr
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: media-config
+          claimName: config

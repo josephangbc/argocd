@@ -2,11 +2,11 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   namespace: media
-  name: bazarr-config
+  name: config
 spec:
-  storageClassName: synology-csi-retain
+  storageClassName: nfs-csi-retain
   accessModes:
     - ReadWriteMany
   resources:
     requests:
-      storage: 1Gi
+      storage: 10Gi

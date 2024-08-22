@@ -71,4 +71,4 @@ spec:
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: jellyseer-config-nfs
+          claimName: config

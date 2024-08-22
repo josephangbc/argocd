@@ -73,6 +73,7 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
+          subPath: bazaar
         - mountPath: /bazarr
           name: data
           subPath: library/bazarr
@@ -85,7 +86,7 @@ spec:
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: bazarr-config
+          claimName: config
       - name: data
         persistentVolumeClaim:
           claimName: data

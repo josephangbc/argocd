@@ -6,4 +6,3 @@ resources:
   - transmission-service.yaml
   - transmission-torrent-service.yaml
   - ingress.yaml
-  - config-pvc.yaml

@@ -74,6 +74,7 @@ spec:
         volumeMounts:
         - mountPath: /config
           name: config
+          subPath: transmission
         - mountPath: /downloads
           name: data
           subPath: downloads/transmission
@@ -83,7 +84,7 @@ spec:
       volumes:
       - name: config
         persistentVolumeClaim:
-          claimName: transmission-config
+          claimName: config
       - name: data
         persistentVolumeClaim:
           claimName: data

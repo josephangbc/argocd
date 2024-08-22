@@ -7,6 +7,3 @@ helmCharts:
   releaseName: sonarr 
   namespace: media
   valuesFile: values.yaml
-
-resources:
-  - resources/config-pvc.yaml

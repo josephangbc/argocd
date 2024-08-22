@@ -20,7 +20,7 @@ service:
 volumes:
   - name: config
     persistentVolumeClaim:
-      claimName: radarr-config
+      claimName: config
   - name: data
     persistentVolumeClaim:
       claimName: data
@@ -28,6 +28,7 @@ volumes:
 volumeMounts:
   - name: config
     mountPath: /config
+    subPath: radarr
   - name: data
     mountPath: /downloads
     subPath: "downloads/transmission" # Path where sonarr picks up downloaded movies
