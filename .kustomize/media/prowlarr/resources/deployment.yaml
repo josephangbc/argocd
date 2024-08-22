@@ -26,9 +26,7 @@ spec:
           value: "1000"
         - name: PGID
           value: "1000"
-        # - name: UMASK
-        #   value: "002"
-        image: hotio/prowlarr:latest
+        image: ghcr.io/linuxserver/radarr:latest
         imagePullPolicy: IfNotPresent
         # livenessProbe:
         #   failureThreshold: 5
