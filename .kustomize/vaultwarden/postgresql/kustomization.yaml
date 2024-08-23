@@ -4,6 +4,6 @@ kind: Kustomization
 helmCharts:
 - name: postgresql
   repo: https://charts.bitnami.com/bitnami
-  version: 15.5.23
+  version: 15.5.5
   releaseName: vaultwarden-postgresql
   valuesFile: values.yaml
