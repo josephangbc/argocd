@@ -15,7 +15,7 @@ primary:
   containerSecurityContext:
     runAsUser: 0
     runAsGroup: 0
-    # runAsNonRoot: false
+    runAsNonRoot: false
 
 # volumePermissions:
 #   enabled: true
