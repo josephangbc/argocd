@@ -13,5 +13,5 @@ primary:
     periodSeconds: 30
     failureThreshold: 15
 
-volumePermissions:
-  enabled: true
+# volumePermissions:
+#   enabled: false
