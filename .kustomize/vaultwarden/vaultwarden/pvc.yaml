@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: vaultwarden
 spec:
-  storageClassName: synology-csi-retain
+  storageClassName: nfs-csi-retain
   accessModes:
     - ReadWriteMany
   resources:
