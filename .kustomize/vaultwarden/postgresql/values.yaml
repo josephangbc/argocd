@@ -12,6 +12,11 @@ primary:
   livenessProbe:
     periodSeconds: 30
     failureThreshold: 15
+  containerSecurityContext:
+    runAsUser: 0
+    runAsGroup: 0
+    runAsNonRoot: false
+    privileged: true
 
 image:
   debug: true
