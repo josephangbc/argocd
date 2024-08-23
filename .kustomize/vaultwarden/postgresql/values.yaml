@@ -17,6 +17,7 @@ primary:
     runAsGroup: 0
     runAsNonRoot: false
     privileged: true
+    allowPrivilegeEscalation: true
 
 image:
   debug: true
