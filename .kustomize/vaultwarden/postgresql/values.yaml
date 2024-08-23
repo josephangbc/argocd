@@ -17,4 +17,4 @@ image:
   debug: true
 
 volumePermissions:
-  enabled: true
+  enabled: false
