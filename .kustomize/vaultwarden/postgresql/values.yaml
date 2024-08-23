@@ -17,5 +17,8 @@ primary:
     runAsGroup: 0
     runAsNonRoot: false
 
+image:
+  debug: true
+
 # volumePermissions:
 #   enabled: true
