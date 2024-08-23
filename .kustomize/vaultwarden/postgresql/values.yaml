@@ -14,4 +14,4 @@ primary:
     failureThreshold: 15
 
 volumePermissions:
-  enabled: false
+  enabled: true
