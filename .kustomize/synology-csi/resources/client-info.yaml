@@ -2,20 +2,20 @@
   "kind": "SealedSecret",
   "apiVersion": "bitnami.com/v1alpha1",
   "metadata": {
-    "name": "client-info",
+    "name": "client-info-secret",
     "namespace": "synology-csi",
     "creationTimestamp": null
   },
   "spec": {
     "template": {
       "metadata": {
-        "name": "client-info",
+        "name": "client-info-secret",
         "namespace": "synology-csi",
         "creationTimestamp": null
       }
     },
     "encryptedData": {
-      "client-info.yaml": "AgBP6GN97X7vrTmqj3qD+pGf7s8+e+fFuo6XU+uFpE/pFrzC/GTP0GFN+IhhTPcHbIzf4LXF00UWWJ/06Qo068ykYqOkeJq86+MQxEEzb9xc1VVOeyUqDWCrGA/B5fWckbFSV9UHPApjOWqrAkAHlKXpau/G27VRxUB8onTKEQaa5B+a5sSRcCI/U34/eqT9N0kdqzyu/70TPGZPINxp3134sV4HaUYT/u5pz/0mUERUuPpuogdRIx6w0Ph5+BJ/WpbDEeprNiYWasGeJ/rpCGqleAufFKWU+3I155YHdzCF+vUquDDM05SGIZmd+/3iRrLhhWtcjLOcRqJ78dBEN+aIgJQAtjvILglp4SSB8swFnw60v1vBv6DQdKIrlofBcKJZPCKzH0hF5AJw48M8ttQqUyM+fXK6nRon5JPG9pJsoNpILLHEpNp5OVkKVQeSn/rrbkDArAn7MOiae7pwEPDTIPfUaynWwqxs1JGz/TyQGqwLXn5ezOgUgLC654tdLPnF0wqEENBU8Myb9ExAuVBSQtEL8WwlI8vyWfKmJJbz6v3fWPG8gEutljZ6SO+joiWkCk+UFkbv+o62oe2TmWYtnVWlLLoyHpaKS/Qg5PTK3vJo08YRlI9ElsM1cFpRLvSTH3oRgKDatOWH1QJSzgzzvuqKrKZUdxmVB4PSzmCDaeNmq90zZCGAybDSax9sw3eCUBo/pmIqIK09qWK8M3JcmKrYcb+4YL3DmGW5lJZ9PFyk19HWZK31sr/inQLaSmVrHqL+E3YMGjDB5OARUG2cy28Ic4mCrOaSMQEgEYx/12I4w9yunMB7KtSoUwEvbjWhOdwVbNlgElDdGOrSwmDwhc6LBlBnrs7DvwnmjznaJugkbnGL+tE5O9/yUM5GWLjl21JV0EVpnW5tCnKuHk1ogxJ+RwvAGy/cLtJIfef461OZC4a29/k/8jmS1MaIY4tMX10FlkjZ+iytVcuGyuHLouvC"
+      "client-info.yaml": "AgC2OltcacIwxIAAZ87TEepSxnofir0L3z2vgT28ySgah2PbZV/jw9Dr11VhdFUR/6qjbQYGSp5yfO50eEQTLj9SMdeqTwrzUCwGYf9WYhAycXEkhBvlrIXvSs7a6CVBKnjx+YoZT1T8tdCB6YFu7abCctT/V+BQhTOBf6LuUtU4MyVm47B/t6ONAu6lWWc0zBMcH2KJFr5XTMNJI9FIczpFG5gxE8iNwtuyNk0lb8O6hItGan8ZZ+sa3M+vJdEQgEF3XdKHn8qsnNfYBErBTa+MvibPu+V4cBgGyVQL893z3z9AiwrQjHBhoGmjyz46QmvuvwxdRYf1XRIakhhTwpEfR/VJa+SzWAaMgFFAjSlixIcEAV5r/I0z1HqJy+3R6SMDStLz5qHAf8KGE/tm7OWK8oHzBdi1pt95/8mnV6f72xKGjTYowuB73NpsmITNx/TVafRr/VeGhgYev+jQOt0Y3jdKDUni7IdP76P4UJDiVBSEkJTzOcz87l2BX4jij9NmWjfSO3JOQqE4gIDFNlxYp1vTGXJmpwB5KcILozM3OueM38asPQstMrDGwy8CO4mQXE+wnz4yh6raOON9KAhDlchPExh0kylXikcVxQmOsCNmNiGczwJ0DRSdtw5Wctmxmka4hKQlx8GaQLV98qkPGbjEwPoTyWkk5EBkO9IFV1kHjAuBN1S9866aPjwf0RXp9p/4soUenW+NMcpC2Rb0KDLSjBOr2yYb+r1TpxuS8F2leL+NekrUrbNFSs5FedQBI7hyVE5/OoGeK3P5UGjbSB5Fk9V3lONXojAMpFgGkl5GeoYfjLXMOfvKY9HAkmb7G1kgyolKUYyT+ua+G8MBzCQtpA2bPkrN9de72L32Otn4he0fWFcXW8M1uR0OcZvPPC+5RKB3aGAy9VKcDm0L7RzkbD4JWOgdC6AcudroaAj6wds76FlGYI96le/B6lTStId6qTvDPwWrkyMLdrl/tTAi"
     }
   }
 }

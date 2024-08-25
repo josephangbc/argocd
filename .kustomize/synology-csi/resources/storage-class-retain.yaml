@@ -1,0 +1,14 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "false"
+  name: synology-csi-retain
+parameters:
+  dsm: 192.168.18.54
+  fsType: btrfs
+  location: /volume2
+  type: thin
+provisioner: csi.san.synology.com
+reclaimPolicy: Retain
+allowVolumeExpansion: true
