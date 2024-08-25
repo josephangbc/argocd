@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: vaultwarden
 spec:
-  storageClassName: nfs-csi-retain
+  storageClassName: synology-csi-retain
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi

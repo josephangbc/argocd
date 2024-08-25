@@ -12,15 +12,15 @@ primary:
   livenessProbe:
     periodSeconds: 30
     failureThreshold: 15
-  containerSecurityContext:
-    runAsUser: 0
-    runAsGroup: 0
-    runAsNonRoot: false
-    privileged: true
-    allowPrivilegeEscalation: true
+  # containerSecurityContext:
+  #   runAsUser: 0
+  #   runAsGroup: 0
+  #   runAsNonRoot: false
+  #   privileged: true
+  #   allowPrivilegeEscalation: true
 
-image:
-  debug: true
+# image:
+#   debug: true
 
 volumePermissions:
-  enabled: false
+  enabled: true
