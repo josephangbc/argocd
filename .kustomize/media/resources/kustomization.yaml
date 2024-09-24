@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - data-pvc.yaml
   - config-pvc.yaml
-  - ingress.yaml
+  # - ingress.yaml
