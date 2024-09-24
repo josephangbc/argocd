@@ -13,7 +13,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: authentik
+            name: authentik-server
             port:
               number: 80
   - host: radarr.kopi.quest
@@ -23,7 +23,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: authentik
+            name: authentik-server
             port:
               number: 80
   - host: sonarr.kopi.quest
@@ -33,7 +33,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: authentik
+            name: authentik-server
             port:
               number: 80
   # - host: bazarr.kopi.quest
