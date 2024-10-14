@@ -1,5 +1,10 @@
 controller:
   service:
+    containerPort:
+      http: 80
+      https: 443
+      ldap: 389
+      ldaps: 636
     loadBalancerIP: "192.168.18.150"
     annotations:
       tailscale.com/expose: "true"
