@@ -5,11 +5,11 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - name: ldap
+    - name: 389-tcp
       port: 389         # For unencrypted LDAP
       targetPort: 389
       protocol: TCP
-    - name: ldaps
+    - name: 636-tcp
       port: 636         # For LDAPS
       targetPort: 636
       protocol: TCP
