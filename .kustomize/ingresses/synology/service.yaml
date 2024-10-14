@@ -12,11 +12,3 @@ spec:
     - name: https
       port: 443
       targetPort: 5111
-    - name: ldap
-      port: 389         # For unencrypted LDAP
-      targetPort: 389
-      protocol: TCP
-    - name: ldaps
-      port: 636         # For LDAPS
-      targetPort: 636
-      protocol: TCP
