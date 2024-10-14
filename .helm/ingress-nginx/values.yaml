@@ -1,10 +1,5 @@
 controller:
   service:
-    containerPort:
-      http: 80
-      https: 443
-      ldap: 389
-      ldaps: 636
     loadBalancerIP: "192.168.18.150"
     annotations:
       tailscale.com/expose: "true"
@@ -17,3 +12,7 @@ controller:
     controllerValue: k8s.io/ingress-nginx
   
   ingressClass: nginx
+
+tcp:
+  389: "default/synology-ldap-service:389"
+  636: "default/synology-ldap-service:636"
