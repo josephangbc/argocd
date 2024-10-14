@@ -2,6 +2,7 @@ controller:
   containerPort:
     http: 80
     https: 443
+    webhook: 8443
     ldap: 389
     ldaps: 636
   service:
