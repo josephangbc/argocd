@@ -5,7 +5,3 @@ resources:
   - service.yaml
   - ingress.yaml
   - endpoint.yaml
-  - tls-cert.yaml
-  - ldap
-
-namespace: default

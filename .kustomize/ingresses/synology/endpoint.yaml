@@ -11,7 +11,3 @@ subsets:
         port: 5110    # This should match the Synology NAS port
       - name: https
         port: 5111    # This should match the Synology NAS port
-      - name: ldap
-        port: 389     # Port for LDAP (adjust if using LDAPS)
-      - name: ldaps
-        port: 636     # Port for LDAPS (optional, if applicable)

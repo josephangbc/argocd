@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: synology-ldap
+  namespace: default
+subsets:
+  - addresses:
+      - ip: 192.168.18.54
+    ports:
+      - name: ldap
+        port: 389     # Port for LDAP (adjust if using LDAPS)
+      - name: ldaps
+        port: 636     # Port for LDAPS (optional, if applicable)
