@@ -18,6 +18,16 @@ spec:
             name: synology-service
             port:
               number: 443
+  - host: ldap.kopi.quest
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: synology-service
+            port:
+              number: 389
   tls:
   - hosts:
     - nas.kopi.quest
