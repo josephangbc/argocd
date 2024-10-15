@@ -13,6 +13,6 @@ controller:
   
   ingressClass: nginx
 
-tcp:
-  389: "default/synology-ldap-service:389"
-  636: "default/synology-ldap-service:636"
+# tcp:
+#   389: "default/synology-ldap-service:389"
+#   636: "default/synology-ldap-service:636"
