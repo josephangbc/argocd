@@ -17,7 +17,7 @@ spec:
           service:
             name: synology-service
             port:
-              number: 443
+              number: 80
   tls:
   - hosts:
     - nas.kopi.quest

@@ -12,7 +12,3 @@ controller:
     controllerValue: k8s.io/ingress-nginx
   
   ingressClass: nginx
-
-# tcp:
-#   389: "default/synology-ldap-service:389"
-#   636: "default/synology-ldap-service:636"
