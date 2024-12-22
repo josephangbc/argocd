@@ -17,8 +17,10 @@ dnsmasq:
   customDnsEntries:
     - address=/router.local/192.168.18.1
     - address=/nas.kopi.quest/192.168.18.153
-    - address=/kopi.quest/192.168.18.150
     - address=/ldap.kopi.quest/192.168.18.154
+    - address=/media.kopi.quest/192.168.18.150
+    - address=/authentik.kopi.quest/192.168.18.150
+    - address=/vaultwarden.kopi.quest/192.168.18.150
 
 whitelist:
   - googleadservices.com
