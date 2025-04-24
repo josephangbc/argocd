@@ -23,12 +23,12 @@ spec:
         - name: TZ
           value: Asia/Singapore
         - name: PUID
-          value: "0"
+          value: "1000"
         - name: PGID
-          value: "0"
+          value: "1000"
         - name: UMASK
           value: "0022"
-        image: hotio/jellyfin:latest
+        image: lscr.io/linuxserver/jellyfin:latest
         imagePullPolicy: Always
         # livenessProbe:
         #   failureThreshold: 5
