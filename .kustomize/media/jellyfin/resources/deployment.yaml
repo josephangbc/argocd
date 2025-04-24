@@ -23,9 +23,9 @@ spec:
         - name: TZ
           value: Asia/Singapore
         - name: PUID
-          value: "1000"
+          value: "0"
         - name: PGID
-          value: "1000"
+          value: "0"
         - name: UMASK
           value: "0022"
         image: hotio/jellyfin:latest
