@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: check-vol
+  namespace: media
+spec:
+  containers:
+  - name: check-vol
+    image: nginx:latest
+    volumeMounts:
+    - name: data
+      mountPath: /pi
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do sleep 30; done"]
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: data
