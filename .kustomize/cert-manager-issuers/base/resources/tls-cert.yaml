@@ -3,9 +3,9 @@ kind: Certificate
 metadata:
   name: tls-cert
 spec:
-  secretName: kopi-quest-tls
+  secretName: josephang-space-tls
   issuerRef:
     name: letsencrypt-issuer-prd
     kind: ClusterIssuer
   dnsNames:
-  - '*.kopi.quest'
+  - '*.josephang.space'

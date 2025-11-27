@@ -15,7 +15,7 @@ spec:
     solvers:
       - selector:
           dnsZones:
-          - kopi.quest
+          - josephang.space
         dns01:
           cloudflare:
             email: josephangbc@gmail.com
