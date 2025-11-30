@@ -8,4 +8,4 @@ spec:
     name: letsencrypt-issuer-prd
     kind: ClusterIssuer
   dnsNames:
-  - '*.kopi.quest'
+  - '*.josephang.space'

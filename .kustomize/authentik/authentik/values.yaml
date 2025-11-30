@@ -20,7 +20,7 @@ server:
     ingressClassName: nginx
     enabled: true
     hosts:
-      - authentik.kopi.quest
+      - authentik.josephang.space
     paths:
       - /
     pathType: Prefix

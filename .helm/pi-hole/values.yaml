@@ -11,16 +11,16 @@ ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
-    - pihole.kopi.quest
+    - pihole.josephang.space
 
 dnsmasq:
   customDnsEntries:
     - address=/router.local/192.168.18.1
-    - address=/nas.kopi.quest/192.168.18.153
-    - address=/ldap.kopi.quest/192.168.18.154
-    - address=/media.kopi.quest/192.168.18.150
-    - address=/authentik.kopi.quest/192.168.18.150
-    - address=/vaultwarden.kopi.quest/192.168.18.150
+    - address=/nas.josephang.space/192.168.18.153
+    - address=/ldap.josephang.space/192.168.18.154
+    - address=/media.josephang.space/192.168.18.150
+    - address=/authentik.josephang.space/192.168.18.150
+    - address=/vaultwarden.josephang.space/192.168.18.150
 
 whitelist:
   - googleadservices.com

@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  url: https://argocd.kopi.quest
+  url: https://argocd.josephang.space
   configManagementPlugins: |
     - name: kustomize-enable-helm
       generate:
@@ -12,8 +12,8 @@ data:
   dex.config: |
     connectors:
     - config:
-        issuer: https://authentik.kopi.quest/application/o/argocd/
-        redirectURI: https://authentik.kopi.quest/callback
+        issuer: https://authentik.josephang.space/application/o/argocd/
+        redirectURI: https://authentik.josephang.space/callback
         clientID: WkuZi6KqJzYEHcKbnGbmEZtUstdMFpITyRUJeLC7
         clientSecret: $dex.authentik.clientSecret
         insecureEnableGroups: true

@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "1000m"
 spec:
   rules:
-  - host: ldap.kopi.quest
+  - host: ldap.josephang.space
     http:
       paths:
       - path: /
@@ -19,5 +19,5 @@ spec:
               number: 389
   tls:
   - hosts:
-    - nas.kopi.quest
+    - nas.josephang.space
     secretName: kopi-quest-tls

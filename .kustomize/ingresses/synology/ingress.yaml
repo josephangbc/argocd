@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx-vpn-external
   rules:
-  - host: nas.kopi.quest
+  - host: nas.josephang.space
     http:
       paths:
       - path: /
@@ -20,5 +20,5 @@ spec:
               number: 80
   tls:
   - hosts:
-    - nas.kopi.quest
+    - nas.josephang.space
     secretName: kopi-quest-tls

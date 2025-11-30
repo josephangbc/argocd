@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: vaultwarden.kopi.quest
+  - host: vaultwarden.josephang.space
     http:
       paths:
       - path: "/"

@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: bazarr.kopi.quest
+  - host: bazarr.josephang.space
     http:
       paths:
       - path: "/"

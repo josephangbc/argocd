@@ -24,7 +24,7 @@ grafana:
     enabled: true
     ingressClassName: nginx
     hosts:
-     - grafana.kopi.quest
+     - grafana.josephang.space
     path: /
 
   additionalDataSources: []
