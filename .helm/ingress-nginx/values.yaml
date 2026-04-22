@@ -4,7 +4,7 @@ controller:
     annotations:
       tailscale.com/expose: "true"
   extraArgs:
-    "default-ssl-certificate": "cert-manager/kopi-quest-tls"
+    "default-ssl-certificate": "cert-manager/josephang-space-tls"
   
   ingressClassResource:
     name: nginx

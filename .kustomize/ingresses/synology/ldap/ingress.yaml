@@ -20,4 +20,4 @@ spec:
   tls:
   - hosts:
     - nas.josephang.space
-    secretName: kopi-quest-tls
+    secretName: josephang-space-tls
