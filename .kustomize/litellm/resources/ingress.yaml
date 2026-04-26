@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: litellm-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: litellm.josephang.space
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: litellm-service
+            port:
+              number: 4000
